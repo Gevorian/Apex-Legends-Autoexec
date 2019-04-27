@@ -55,7 +55,6 @@ snd_headphone_pan_exponent "2"
 snd_musicvolume "0"
 snd_setmixer PlayerFootsteps vol 0.1
 snd_setmixer GlobalFootsteps vol 1.2
-hud_setting_pingAlpha "0.100000" -- transparent revive banners 
 
 //Muzzle Flash Removal ----------------------------------------------------------------------------------------------------------------
 alias "+shoot" "+attack; r_particle_timescale 300" //muzzle flash ~set value to 3 if you want bullet tracers.
