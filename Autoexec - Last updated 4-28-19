@@ -108,8 +108,8 @@ fog_enable_water_fog 0
 fog_volume 0
 fog_enableskybox 1
 fps_max_use_refresh 0
-mat_picmip 1           // Basically this is the texture Quallity controller of the game 4 = Lowest ... 1 = High
-stream_memory 307200   -- change this value to 0 if you havae mat_picmip set to 4
+mat_picmip 4           // Basically this is the texture Quallity controller of the game 4 = Lowest ... 1 = High
+stream_memory 0   -- change this value to 0 if you havae mat_picmip set to 4
 mat_mip_linear 1
 mat_fastnobump 0
 mat_fastspecular 0
@@ -123,7 +123,7 @@ mat_antialias_mode "0"
 mat_colcorrection_disableentities "1"
 mat_depthfeather_enable "0"
 mat_fxaa_enable "0"
-mat_mip_linear "1"
+mat_mip_linear "4"
 mat_autoexposure_max_multiplier 5
 mat_autoexposure_min_multiplier 1.0
 mat_diffuse 1
