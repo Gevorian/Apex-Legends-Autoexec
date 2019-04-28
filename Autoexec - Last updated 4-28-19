@@ -11,6 +11,13 @@ hud_setting_pingAlpha "0.400000" //ping and banner transparency
 //+speed uncomment this if you want to sprint without pressing shift
 //fps_max 0
 //r_drawtracers_firstperson "1" //set to 0 no no tracers on your bullets
+//mat_autoexposure_override_min_max "1"           // is required to get the other auto exposure commands working
+//mat_autoexposure_max "1"                        // slightly lowered the exposure of the world
+//mat_autoexposure_min "0.9"
+//mat_autoexposure_speed "9"                      // Speed between the exposure changes
+//mat_autoexposure_uncap "0"
+//sprint_view_shake_style "1"                     // Less Headbob
+//mat_gamma 1.5                                   // Brightness/Gamma
 
 //bhop config -- uncomment all these lines if you want to bhop with mouse scroll wheel
 //bind "MWHEELUP" "+weaponcycle" 0
@@ -95,11 +102,23 @@ csm_world_shadows 0
 dlight_enable 0
 env_lightglow 0
 dof_enable 0
+fog_enableskybox 0
 fog_enable 0
 fog_enable_water_fog 0
 fog_volume 0
 fog_enableskybox 1
 fps_max_use_refresh 0
+mat_picmip 1           // Basically this is the texture Quallity controller of the game 4 = Lowest ... 1 = High
+stream_memory 307200   -- change this value to 0 if you havae mat_picmip set to 4
+mat_mip_linear 1
+mat_fastnobump 0
+mat_fastspecular 0
+mat_disable_bloom 1
+mat_drawflat 1 
+mat_antialias_mode 0 
+mat_detail_tex 0
+mat_debug_tonemapping_disable 1 
+mat_sun_highlight_size 0    
 mat_antialias_mode "0"
 mat_colcorrection_disableentities "1"
 mat_depthfeather_enable "0"
@@ -177,6 +196,13 @@ mat_specular 0
 mat_use_compressed_hdr_textures 1
 mat_instancing 1
 mat_vignette_enable 0
+mat_motion_blur_falling_intensity 0
+mat_motion_blur_falling_max 0
+mat_motion_blur_falling_min 0
+mat_motion_blur_forward_enabled 0
+mat_motion_blur_percent_of_screen_max 0
+mat_motion_blur_rotation_intensity 0
+mat_motion_blur_strength 0
 particle_dlights_enable 0
 r_rimlight "0"
 r_decals 0
@@ -191,7 +217,7 @@ r_ambientfraction "0.2"
 r_lod_switch_scale "0"
 r_modeldecal_maxtotal "1"
 r_DrawDisp 0
-r_PhysPropStaticLighting 0
+r_PhysPropLighting 0
 r_ambientrefraction 0
 r_drawdetailprops 0
 r_drawflecks 0
@@ -227,14 +253,15 @@ bob_yaw "0"
 bob_pitch "0"
 ssao_blur 0
 sssss_enable 0
+staticProp_budget 4000
 static_shadow 1
-static_shadow_res 0
+static_shadow_res 1
 stream_cache_high_priority_static_models 0    // Never preload static models (??) 0 = Never preload; 1 = Preload static models; 2 = Always Preload
 stream_cache_preload_from_rpak 0  // Never preload and store into cache from rpak (??) 0 = Never preload; 1 = Preload static models; 2 = Always Preload
 stream_drop_unused 1  // drop unused textures aggressively
 stream_enable 0       // if "disabled", you have to specify stream_picmip, possible bug
 stream_mode "none"      // disable streaming altogether values: default all none
-stream_picmip "4.0"
+stream_picmip "1.0"
 cl_ejectbrass "0"
 viewmodel_selfshadow "0"
 violence_ablood "0"
