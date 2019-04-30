@@ -1,0 +1,1 @@
+-exec autoexec -high +cl_showfps 4 -fullscreen -novid -forcenovsync
