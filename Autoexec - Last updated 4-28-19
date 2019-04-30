@@ -122,7 +122,7 @@ mat_antialias_mode "0"
 mat_colcorrection_disableentities "1"
 mat_depthfeather_enable "0"
 mat_fxaa_enable "0"
-mat_mip_linear "4"
+mat_mip_linear "0"
 mat_autoexposure_max_multiplier 5
 mat_autoexposure_min_multiplier 1.0
 mat_diffuse 1
