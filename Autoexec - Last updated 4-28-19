@@ -133,6 +133,7 @@ mat_motion_blur_forward_enabled 0
 mat_motion_blur_percent_of_screen_max 0
 mat_motion_blur_rotation_intensity 0
 mat_motion_blur_strength 0
+mat_filtertextures 0
 mat_reduceparticles 1
 mat_queue_mode 2
 mat_sky_scale "5"
