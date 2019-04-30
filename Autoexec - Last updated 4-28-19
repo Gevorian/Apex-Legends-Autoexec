@@ -174,7 +174,6 @@ mat_envmaptgasize 8
 mat_fastnobump 1
 mat_fastspecular 1
 mat_filterlightmaps 0
-mat_filtertextures 0
 mat_force_bloom 0
 mat_global_lighting 0
 mat_hdr_enabled 0
