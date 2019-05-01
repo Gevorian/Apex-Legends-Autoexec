@@ -215,8 +215,6 @@ r_waterforceexpensive "0"
 r_waterforcereflectentities "0"
 r_fastzreject "0"
 r_jiggle_bones "0"
-r_ambientfraction "0.2"
-r_lod_switch_scale "0"
 r_modeldecal_maxtotal "1"
 r_DrawDisp 0
 r_PhysPropLighting 0
