@@ -56,6 +56,8 @@ miles_occlusion_server_sounds_per_frame "200"
 miles_occlusion "0"
 miles_occlusion_force "0"
 miles_occlusion_partial "0"
+cl_footstep_event_max_dist 4000
+//the commands below dont do anything (hoping devs allow them to work in future)
 snd_mixahead "0.05"
 snd_headphone_pan_exponent "2"
 snd_musicvolume "0"
