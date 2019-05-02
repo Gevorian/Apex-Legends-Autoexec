@@ -198,13 +198,6 @@ mat_specular 0
 mat_use_compressed_hdr_textures 1
 mat_instancing 1
 mat_vignette_enable 0
-mat_motion_blur_falling_intensity 0
-mat_motion_blur_falling_max 0
-mat_motion_blur_falling_min 0
-mat_motion_blur_forward_enabled 0
-mat_motion_blur_percent_of_screen_max 0
-mat_motion_blur_rotation_intensity 0
-mat_motion_blur_strength 0
 particle_dlights_enable 0
 r_rimlight "0"
 r_decals 0
