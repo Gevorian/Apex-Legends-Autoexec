@@ -1,7 +1,6 @@
-//Comment these 2 lines if  you have issues with resolution, they are for stretched res players. Divide width by height for your res.  Ex. 1440 / 1080 = 1.33, 
+//Comment these 2 lines if  you have issues with resolution, they are for stretched res players. Divide width by height for your res.  Ex. 1440 / 1080 = 1.33,
 mat_letterbox_aspect_goal 1.33
-mat_letterbox_aspect_threshold 1.33 
-
+mat_letterbox_aspect_threshold 1.33
 //Preference commands  -- remove "//" if you want them to run
 cl_drawmonitors 0 //disabling banner pics
 mat_screen_blur_enabled 0 //menu blur
@@ -17,7 +16,6 @@ hud_setting_pingAlpha "0.400000" //ping and banner transparency
 //mat_autoexposure_speed "9"                      // Speed between the exposure changes
 //mat_autoexposure_uncap "0"
 //sprint_view_shake_style "1"                     // Less Headbob
-
 //bhop config -- uncomment all these lines if you want to bhop with mouse scroll wheel
 //bind "MWHEELUP" "+weaponcycle" 0
 //bind "MWHEELDOWN" "+weaponcycle" 0
@@ -25,12 +23,10 @@ hud_setting_pingAlpha "0.400000" //ping and banner transparency
 //bind MWHEELUP "+weaponcycle"
 //alias bhopon "bind MWHEELDOWN +jump;bind MWHEELUP +jump;bind mouse4 bhopoff"
 //alias bhopoff "bind MWHEELDOWN +weaponcycle;bind MWHEELUP +weaponcycle;bind mouse4 bhopon"
-
 //Mouse options
 m_rawinput "1"
 m_filter "0"
-m_acceleration "0"
-m_customaccel "0"                                  
+m_customaccel "0"
 m_customaccel_exponent "0"
 m_mouseaccel1 "0"
 m_mouseaccel2 "0"
@@ -43,14 +39,11 @@ unbindalljoystick
 /////////sens fix for stretched resolution//////////
 ////default yaw .022/////
 // 16:10 sens fix
-//pitch "0.022"
 //yaw "0.0198"
-/////////////////////////
 // 4:3 sens fix
 //pitch "0.022"
 //yaw "0.0165"
 /////////////////////////
-
 //Audio Commands
 miles_occlusion_server_sounds_per_frame "200"
 miles_occlusion "0"
@@ -64,13 +57,11 @@ snd_headphone_pan_exponent "2"
 snd_musicvolume "0"
 snd_setmixer PlayerFootsteps vol 0.1
 snd_setmixer GlobalFootsteps vol 1.2
-
 //Muzzle Flash Removal ----------------------------------------------------------------------------------------------------------------
 alias "+shoot" "+attack; r_particle_timescale 300" //muzzle flash ~set value to 3 if you want bullet tracers.
 alias "-shoot" "-attack; r_particle_timescale 1" //muzzle flash
 bind_US_standard "mouse1" "+shoot" //muzzle flash
 bind_US_standard "f12" "exec autoexec" //Press F12 to exec autoexec if not already in launch options
-
 //most commands here are for FPS improvements, feel free to adjust them if you'd like a bit more quality.
 cl_cull_weapon_fx 0
 cl_detaildist 0
@@ -116,11 +107,11 @@ mat_mip_linear 1
 mat_fastnobump 0
 mat_fastspecular 0
 mat_disable_bloom 1
-mat_drawflat 1 
-mat_antialias_mode 0 
+mat_drawflat 1
+mat_antialias_mode 0
 mat_detail_tex 0
-mat_debug_tonemapping_disable 1 
-mat_sun_highlight_size 0    
+mat_debug_tonemapping_disable 1
+mat_sun_highlight_size 0
 mat_antialias_mode "0"
 mat_colcorrection_disableentities "1"
 mat_depthfeather_enable "0"
