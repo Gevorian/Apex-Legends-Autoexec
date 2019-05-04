@@ -22,11 +22,6 @@ hud_setting_pingAlpha "0.400000" //ping and banner transparency
 //+speed uncomment this if you want to sprint without pressing shift
 //fps_max 0
 //r_drawtracers_firstperson "1" //set to 0 for no tracers on your bullets
-//mat_autoexposure_override_min_max "1"           // is required to get the other auto exposure commands working
-//mat_autoexposure_max "1"                        // slightly lowered the exposure of the world
-//mat_autoexposure_min "0.9"
-//mat_autoexposure_speed "9"                      // Speed between the exposure changes
-//mat_autoexposure_uncap "0"
 //sprint_view_shake_style "1"                     // Less Headbob
 
 //bhop config -- uncomment all these lines if you want to bhop with mouse scroll wheel
@@ -57,7 +52,7 @@ unbindalljoystick
 // 4:3 sens fix
 //pitch "0.022"
 //yaw "0.0165"
-/////////////////////////
+
 
 //Audio Commands
 miles_occlusion_server_sounds_per_frame "200"
