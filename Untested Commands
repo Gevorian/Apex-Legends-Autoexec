@@ -47,12 +47,6 @@ miles_write_passive_dumpfile
 
 //etc
 mat_global_lighting 0
-mat_hdr_enabled 0
-mat_norendering 1
-mat_postprocess_enable 0
-mat_reducefillrate 1
-mat_fxaa_enable 0
-mat_use_compressed_hdr_textures 1
 r_particle_sim_spike_threshold_ms 0
 prop_active_gib_limit 0
 mat_disable_lightmap_ambient 1
