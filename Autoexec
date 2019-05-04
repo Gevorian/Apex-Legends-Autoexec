@@ -77,9 +77,9 @@ snd_setmixer GlobalFootsteps vol 1.2
 alias "+shoot" "+attack; r_particle_timescale 300" //muzzle flash ~set value to 3 if you want bullet tracers.
 alias "-shoot" "-attack; r_particle_timescale 1" //muzzle flash
 bind_US_standard "mouse1" "+shoot" //muzzle flash
-bind_US_standard "f12" "exec autoexec" //Press F12 to exec autoexec if not already in launch options
 
 //most commands here are for FPS improvements, feel free to adjust them if you'd like a bit more quality.
+bind_US_standard "f12" "exec autoexec" //Press F12 to exec autoexec if not already in launch options
 cl_cull_weapon_fx 0
 cl_detaildist 0
 cl_detailfade 0
