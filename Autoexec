@@ -23,15 +23,18 @@ hud_setting_pingAlpha "0.400000" //ping and banner transparency
 //fps_max 0
 //r_drawtracers_firstperson "1" //set to 0 for no tracers on your bullets
 //sprint_view_shake_style "1"   // Less Headbob
-staticProp_max_scaled_dist 1500 //The distance at which static objects will be rendered on the map
+//Thanks to Hideaway2h for the below commands and network commands
+//staticProp_max_scaled_dist 1500 //The distance at which static objects will be rendered on the map
+//n_usekeyboardsampletime 0 // On / Off keystroke smoothing parameter, reduces keyboard input delay
+//sidearmSwapSelectCooldown 0.1 Reduce the time to change weapons (inventory) (def. 0.25)
+//sidearmSwapSelectDoubleTapTime 0.1 Reduce the time to change weapons by double-clicking the mouse (inventory) (def. 0.25)
+//ordnanceSwapSelectCooldown 0.1 Reduce the time to change grenades (inventory) (def. 0.25)
 
-//bhop config -- uncomment all these lines if you want to bhop with mouse scroll wheel
-//bind "MWHEELUP" "+weaponcycle" 0
-//bind "MWHEELDOWN" "+weaponcycle" 0
-//bind MWHEELDOWN "+weaponcycle"
-//bind MWHEELUP "+weaponcycle"
-//alias bhopon "bind MWHEELDOWN +jump;bind MWHEELUP +jump;bind mouse4 bhopoff"
-//alias bhopoff "bind MWHEELDOWN +weaponcycle;bind MWHEELUP +weaponcycle;bind mouse4 bhopon"
+//Network commands -- Remove "//" to use these.
+//rate 128000
+//host_limitlocal 1
+//origin_presense_updateRate 10
+//cl_updaterate_mp 100; match_updateRate 100
 
 //Mouse options
 m_rawinput "1"
