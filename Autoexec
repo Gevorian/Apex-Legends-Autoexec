@@ -262,7 +262,6 @@ r_jiggle_bones 0
 r_updaterefracttexture 0
 r_updaterefracttexture_allowmultiple 0
 r_WaterDrawReflection 0
-r_WaterDrawRefraction 0
 r_forcecheapwater 1
 r_dopixelvisibility 0
 r_drawbatchdecals 0
