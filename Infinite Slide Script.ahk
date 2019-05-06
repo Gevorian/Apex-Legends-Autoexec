@@ -1,4 +1,4 @@
-//xbutton1 = back side button of mouse
+; xbutton1 = back side button of mouse
 $xbutton1::
 While GetKeyState("xbutton1","P")
 {
