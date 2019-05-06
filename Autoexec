@@ -1,4 +1,4 @@
-//LAST UPDATED May 4th, 2019.
+//LAST UPDATED May 6th, 2019.
 
 //VIDEO TUTORIAL: https://youtu.be/fAgmNfG_NlI
 
@@ -274,8 +274,6 @@ lightmap_realtimeshadows 0
 lightmap_ambient 0
 mat_colcorrection_disableentities 0
 mat_diffuse 0
-mat_detail_tex 0
-mat_phong 0
 mat_filtertextures 0
 mat_filterlightmaps 1
 mat_screen_blur_enabled 0
