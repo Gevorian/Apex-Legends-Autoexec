@@ -2,8 +2,6 @@
 
 //VIDEO TUTORIAL: https://youtu.be/fAgmNfG_NlI
 
-//Infinite Slide Script: https://github.com/Gevorian/Apex-Legends/blob/master/Infinite%20Slide%20Script.ahk
-
 //Comment these 2 lines if  you have issues with resolution, they are for stretched res players. Divide width by height for your res.  Ex. 1440 / 1080 = 1.33,
 mat_letterbox_aspect_goal 1.33
 mat_letterbox_aspect_threshold 1.33
