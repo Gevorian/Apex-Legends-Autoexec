@@ -1,15 +1,20 @@
 //LAST UPDATED May 6th, 2019.
+
 //VIDEO TUTORIAL: https://youtu.be/fAgmNfG_NlI
+
 //Infinite Slide Script: https://github.com/Gevorian/Apex-Legends/blob/master/Infinite%20Slide%20Script.ahk
+
 //Comment these 2 lines if  you have issues with resolution, they are for stretched res players. Divide width by height for your res.  Ex. 1440 / 1080 = 1.33,
 mat_letterbox_aspect_goal 1.33
 mat_letterbox_aspect_threshold 1.33
+
 //Custom FOV
 //cl_fovScale "1.7" //fov
 //1.00 is 70
 //1.27 is 90
 //1.55 is 110
 //1.70 is 120
+
 //Preference commands  -- remove "//" if you want them to run
 cl_drawmonitors 0 //disabling banner pics
 mat_screen_blur_enabled 0 //menu blur
@@ -27,6 +32,7 @@ hud_setting_pingAlpha "0.400000" //ping and banner transparency
 //host_limitlocal 1
 //origin_presense_updateRate 10
 //cl_updaterate_mp 100; match_updateRate 100
+
 //Mouse options
 m_rawinput "1"
 m_filter "0"
@@ -49,6 +55,7 @@ unbindalljoystick
 //yaw "0.0165"
 /////////////////////////
 //Audio Commands
+
 miles_occlusion_server_sounds_per_frame "200"
 miles_occlusion "0"
 miles_occlusion_force "0"
@@ -61,10 +68,12 @@ snd_headphone_pan_exponent "2"
 snd_musicvolume "0"
 snd_setmixer PlayerFootsteps vol 0.1
 snd_setmixer GlobalFootsteps vol 1.2
+
 //Muzzle Flash Removal ----------------------------------------------------------------------------------------------------------------
 alias "+shoot" "+attack; r_particle_timescale 300" //muzzle flash ~set value to 3 if you want bullet tracers.
 alias "-shoot" "-attack; r_particle_timescale 1" //muzzle flash
 bind_US_standard "mouse1" "+shoot" //muzzle flash
+
 //most commands here are for FPS improvements, feel free to adjust them if you'd like a bit more quality.
 bind_US_standard "f12" "exec autoexec" //Press F12 to exec autoexec if not already in launch options
 cl_cull_weapon_fx 0
