@@ -196,7 +196,6 @@ bob_yaw "0"
 bob_pitch "0"
 ssao_blur 0
 stream_drop_unused 1  // drop unused textures aggressively
-cl_ejectbrass "0"
 viewmodel_selfshadow "0"
 violence_ablood "0"
 violence_hblood "0"
@@ -225,7 +224,6 @@ mat_vsync_mode	"0"
 mat_backbuffer_count	"0"
 mat_antialias_mode	"0"
 sssss_enable 0
-csm_enabled	"0"
 csm_coverage	"0"
 csm_cascade_res	"0"
 mat_disable_bloom	"1"
