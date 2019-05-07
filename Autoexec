@@ -54,8 +54,8 @@ unbindalljoystick
 //pitch "0.022"
 //yaw "0.0165"
 /////////////////////////
-//Audio Commands
 
+//Audio Commands
 miles_occlusion_server_sounds_per_frame "200"
 miles_occlusion "0"
 miles_occlusion_force "0"
