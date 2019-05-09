@@ -44,14 +44,6 @@ joystick "0"
 joystick_force_disabled "1"
 joystick_force_disabled_set_from_options "1"
 unbindalljoystick
-/////////sens fix for stretched resolution//////////
-////default yaw .022/////
-// 16:10 sens fix
-//yaw "0.0198"
-// 4:3 sens fix
-//pitch "0.022"
-//yaw "0.0165"
-/////////////////////////
 
 //Audio Commands
 miles_occlusion_server_sounds_per_frame "200"
@@ -279,7 +271,7 @@ mat_max_worldmesh_vertices "0"
 mat_maxframelatency "0"
 csm_enableunlock 1
 csm_coverage 0
-csm_enabled 1
+csm_enabled 0
 csm_world_shadows 0
 csm_cascade_res 0
 //shadow options need csm_enabled 1
