@@ -32,7 +32,7 @@
 	"setting.mat_vsync_mode"	"0"
 	"setting.mat_backbuffer_count"	"0"
 	"setting.mat_antialias_mode"	"0"
-	"setting.csm_enabled"	"1"
+	"setting.csm_enabled"	"0"
 	"setting.csm_coverage"	"0"
 	"setting.csm_cascade_res"	"0"
 	"setting.mat_depthfeather_enable" "0"
