@@ -98,7 +98,7 @@ fog_enable_water_fog 0
 fog_volume 0
 fog_enableskybox 1
 fps_max_use_refresh 0
-mat_picmip 4           // Basically this is the texture Quallity controller of the game 4 = Lowest ... 1 = High
+mat_picmip 4 // Basically this is the texture Quallity controller of the game 4 = Lowest ... 1 = High
 stream_memory 0   -- change this value to 0 if you havae mat_picmip set to 4
 mat_mip_linear 1
 mat_fastnobump 0
@@ -123,7 +123,7 @@ mat_colorcorrection 0
 mat_depthbias_shadowmap 0
 mat_shadowstate "0"
 mat_depthbias_tightshadowmap 0
-mat_disable_bloom 1 //disables bloom
+mat_disable_bloom 1
 mat_disable_dof 1
 mat_disable_fancy_blending 1
 mat_disable_lightwarp 1
@@ -185,7 +185,7 @@ cl_predict "1"
 bob_yaw "0"
 bob_pitch "0"
 ssao_blur 0
-stream_drop_unused 1  // drop unused textures aggressively
+stream_drop_unused 1
 viewmodel_selfshadow "0"
 violence_ablood "0"
 violence_hblood "0"
@@ -201,7 +201,6 @@ mat_picmip	"4"
 particle_cpu_level	"0"
 r_createmodeldecals	"0"
 r_decals	"0"
-//r_lod_switch_scale	".32"
 shadow_enable	"0"
 shadow_depth_dimen_min	"0"
 shadow_depth_upres_factor_max	"0"
@@ -209,7 +208,6 @@ shadow_maxdynamic	"0"
 ssao_enabled	"0"
 ssao_downsample	"0"
 modeldecals_forceAllowed	"-999999"
-//volumetric_lighting	"0"
 mat_vsync_mode	"0"
 mat_backbuffer_count	"0"
 mat_antialias_mode	"0"
@@ -225,26 +223,18 @@ r_fog	"0"
 fog_enable	"0"
 fog_enable_water_fog	"0"
 fog_enableskybox	"0"
-//r_particle_lighting_enable	"0" //might need this to spot color of loot item//apex
 r_particle_low_res_enable	"1"
 cl_particle_max_count	"-9999999999"
 cl_particle_limiter_max_particle_count	"-9999999999"
 cl_particle_limiter_max_system_count	"-9999999999"
 mat_depthfeather_enable "0"
-m_acceleration "0" //Mouse acceleration
-//m_forward "1.0" //Mouse forward factor. 0x0000000A
-//m_invert_pitch "0" //Whether to invert the pitch axis of the mouse. 0x01000008
-//m_sensitivity //Old name of 'mouse_sensitivity'. For smoothly upgrading players to the new sensitivity setting convars. 0x00000008
-//m_side "1.0"
 m_rawinput 1
 //Exposure
-mat_autoexposure_override_min_max "1"           // required to get the other auto exposure commands working
+mat_autoexposure_override_min_max "1" // required to get the other auto exposure commands working
 hud_setting_pingDoubleTapEnemy "0"
-//stream_enable 0 //bugs
 mat_compressedtextures 1
 cl_ragdoll_collide 0
 r_rimlight 0
-//r_volumetric_lighting_enabled 0 //might need this to spot color of loot item//apex
 r_modeldecal_maxtotal 0
 r_decals 0
 r_jiggle_bones 0
@@ -265,7 +255,6 @@ mat_diffuse 0
 mat_filtertextures 0
 mat_filterlightmaps 1
 mat_screen_blur_enabled 0
-//mat_envmap_scale 0 //texture prob
 mat_local_contrast_scale_override 0
 mat_max_worldmesh_vertices "0"
 mat_maxframelatency "0"
@@ -274,14 +263,13 @@ csm_coverage 0
 csm_enabled 0
 csm_world_shadows 0
 csm_cascade_res 0
-//shadow options need csm_enabled 1
 shadow_capable 0
 shadow_enable 0
 viewmodel_selfshadow 0
 static_shadow "1"
 static_shadow_res "0"
 cl_disable_ragdolls 1
-cl_use_simd_bones 1 // not sure they use this
+cl_use_simd_bones 1
 cl_simdbones_slerp 1
 cl_headbob_amp 0
 cl_headbob_freq 0
