@@ -18,6 +18,7 @@ cl_drawmonitors 0 //disabling banner pics
 mat_screen_blur_enabled 0 //menu blur
 hud_setting_minimapRotate 1 //Rotating Minimap
 hud_setting_pingAlpha "0.400000" //ping and banner transparency
+//r_dxgi_max_frame_latency 0 //Max # Pre-prepared frames (if you do not use profiles in the Nvidia Control Panel, use "1") (def. 0)
 //showfps_enabled 1 //shows fps in huge mumbo jumbo
 //+speed uncomment this if you want to sprint without pressing shift
 //fps_max 0
