@@ -26,6 +26,7 @@ hud_setting_pingAlpha "0.400000" //ping and banner transparency
 //sprint_view_shake_style "1"   // Less Headbob
 //staticProp_max_scaled_dist 1500 //The distance at which static objects will be rendered on the map
 //n_usekeyboardsampletime 0 // On / Off keystroke smoothing parameter, reduces keyboard input delay
+
 //Network commands -- Remove "//" to use these.
 //rate 128000
 //host_limitlocal 1
