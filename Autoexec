@@ -27,11 +27,11 @@ sprint_view_shake_style "1"   // Less Headbob
 staticProp_max_scaled_dist 1500 //The distance at which static objects will be rendered on the map
 n_usekeyboardsampletime 0 // On / Off keystroke smoothing parameter, reduces keyboard input delay
 
-Network commands -- Remove "//" to use these.
-rate 128000
-host_limitlocal 1
-origin_presense_updateRate 10
-cl_updaterate_mp 100; match_updateRate 100
+//Network commands -- Remove "//" to use these.
+//rate 128000
+//host_limitlocal 1
+//origin_presense_updateRate 10
+//cl_updaterate_mp 100; match_updateRate 100
 
 //Mouse options
 m_rawinput "1"
@@ -54,7 +54,7 @@ miles_occlusion_force "0"
 miles_occlusion_partial "0"
 cl_footstep_event_max_dist 5000 //default "2500" 
 rope_wind_dist 0
-//the commands below dont do anything (hoping devs allow them to work in future)
+//The below commands don't do anything; held here for the future. 
 snd_mixahead "0.05"
 snd_headphone_pan_exponent "2"
 snd_musicvolume "0"
