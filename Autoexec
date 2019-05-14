@@ -1,6 +1,6 @@
-//LAST UPDATED May 6th, 2019.
+//Last updated May 6th, 2019
 
-//VIDEO TUTORIAL: https://youtu.be/fAgmNfG_NlI
+//Tutorial Video: 
 
 //Comment these 2 lines if  you have issues with resolution, they are for stretched res players. Divide width by height for your res.  Ex. 1440 / 1080 = 1.33,
 mat_letterbox_aspect_goal 1.33
@@ -18,20 +18,20 @@ cl_drawmonitors 0 //disabling banner pics
 mat_screen_blur_enabled 0 //menu blur
 hud_setting_minimapRotate 1 //Rotating Minimap
 hud_setting_pingAlpha "0.400000" //ping and banner transparency
-//r_dxgi_max_frame_latency 0 //Max # Pre-prepared frames (if you do not use profiles in the Nvidia Control Panel, use "1") (def. 0)
+r_dxgi_max_frame_latency 0 //Max # Pre-prepared frames (if you do not use profiles in the Nvidia Control Panel, use "1") (def. 0)
 //showfps_enabled 1 //shows fps in huge mumbo jumbo
-//+speed uncomment this if you want to sprint without pressing shift
++speed uncomment this if you want to sprint without pressing shift
 //fps_max 0
-//r_drawtracers_firstperson "1" //set to 0 for no tracers on your bullets
-//sprint_view_shake_style "1"   // Less Headbob
-//staticProp_max_scaled_dist 1500 //The distance at which static objects will be rendered on the map
-//n_usekeyboardsampletime 0 // On / Off keystroke smoothing parameter, reduces keyboard input delay
+r_drawtracers_firstperson "1" //set to 0 for no tracers on your bullets
+sprint_view_shake_style "1"   // Less Headbob
+staticProp_max_scaled_dist 1500 //The distance at which static objects will be rendered on the map
+n_usekeyboardsampletime 0 // On / Off keystroke smoothing parameter, reduces keyboard input delay
 
-//Network commands -- Remove "//" to use these.
-//rate 128000
-//host_limitlocal 1
-//origin_presense_updateRate 10
-//cl_updaterate_mp 100; match_updateRate 100
+Network commands -- Remove "//" to use these.
+rate 128000
+host_limitlocal 1
+origin_presense_updateRate 10
+cl_updaterate_mp 100; match_updateRate 100
 
 //Mouse options
 m_rawinput "1"
@@ -105,7 +105,6 @@ stream_memory 0   -- change this value to 0 if you havae mat_picmip set to 4
 mat_mip_linear 1
 mat_fastnobump 0
 mat_fastspecular 0
-mat_disable_bloom 1
 mat_drawflat 1
 mat_antialias_mode 0
 mat_debug_tonemapping_disable 1
