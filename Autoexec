@@ -1,4 +1,4 @@
-//Last updated May 6th, 2019
+//Last updated May 14th, 2019
 
 //Tutorial Video: https://youtu.be/fAgmNfG_NlI
 
@@ -67,6 +67,7 @@ alias "-shoot" "-attack; r_particle_timescale 1" //muzzle flash
 bind_US_standard "mouse1" "+shoot" //muzzle flash
 
 //most commands here are for FPS improvements, feel free to adjust them if you'd like a bit more quality.
+r_ambientfraction "0.2"
 bind_US_standard "f12" "exec autoexec" //Press F12 to exec autoexec if not already in launch options
 cl_cull_weapon_fx 0
 cl_detaildist 0
