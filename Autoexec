@@ -1,20 +1,16 @@
 //Last updated May 16th, 2019
 
 //To find out when the Autoexec updates, please follow me on Twitter: Twitter.com/Gevorian
-
 //Tutorial Video: https://youtu.be/fAgmNfG_NlI
-
 //Comment these 2 lines if  you have issues with resolution, they are for stretched res players. Divide width by height for your res.  Ex. 1440 / 1080 = 1.33,
 mat_letterbox_aspect_goal 1.33
 mat_letterbox_aspect_threshold 1.33
-
 //Custom FOV
 //cl_fovScale "1.7" //fov
 //1.00 is 70
 //1.27 is 90
 //1.55 is 110
 //1.70 is 120
-
 //Preference commands  -- remove "//" if you want them to run
 //fps_max 0
 //r_dxgi_max_frame_latency 0 //Max # Pre-prepared frames (Use this if you don't use custom NVIDIA Control Panel settings)
@@ -30,7 +26,6 @@ r_drawtracers_firstperson "1" //set to 0 for no tracers on your bullets
 sprint_view_shake_style "1"   // Less Headbob
 staticProp_max_scaled_dist 1500 //The distance at which static objects will be rendered on the map
 n_usekeyboardsampletime 0 // On / Off keystroke smoothing parameter, reduces keyboard input delay
-
 //Network commands -- Remove "//" to use these.
 //rate 128000
 //host_limitlocal 1
@@ -45,7 +40,6 @@ cl_smoothtime "0.01"
 //net_compresspackets_minsize 128
 //net_maxcleartime 0.020346
 telemetry_client_enable 0
-
 //Mouse options
 m_rawinput "1"
 m_filter "0"
@@ -59,7 +53,6 @@ joystick "0"
 joystick_force_disabled "1"
 joystick_force_disabled_set_from_options "1"
 unbindalljoystick
-
 //Audio Commands
 miles_occlusion_server_sounds_per_frame "400" //default 60"
 miles_occlusion "0"
@@ -73,12 +66,10 @@ snd_headphone_pan_exponent "2"
 snd_musicvolume "0"
 snd_setmixer PlayerFootsteps vol 0.1
 snd_setmixer GlobalFootsteps vol 1.2
-
 //Muzzle Flash Removal ----------------------------------------------------------------------------------------------------------------
 alias "+shoot" "+attack; r_particle_timescale 300" //muzzle flash ~set value to 3 if you want bullet tracers.
 alias "-shoot" "-attack; r_particle_timescale 1" //muzzle flash
 bind_US_standard "mouse1" "+shoot" //muzzle flash
-
 //most commands here are for FPS improvements, feel free to adjust them if you'd like a bit more quality.
 cl_smooth "0"
 not_focus_sleep "0"
@@ -218,8 +209,6 @@ cl_ragdoll_maxcount	"0"
 cl_ragdoll_self_collision	"0"
 mat_forceaniso	"0"
 mat_mip_linear	"0"
-stream_memory	"0"
-mat_picmip	"4"
 particle_cpu_level	"0"
 r_createmodeldecals	"0"
 r_decals	"0"
@@ -250,7 +239,6 @@ cl_particle_max_count	"-1"
 cl_particle_limiter_max_particle_count	"-1"
 cl_particle_limiter_max_system_count	"-1"
 mat_depthfeather_enable "0"
-m_rawinput 1
 //Exposure
 mat_autoexposure_override_min_max "1" // required to get the other auto exposure commands working
 hud_setting_pingDoubleTapEnemy "0"
