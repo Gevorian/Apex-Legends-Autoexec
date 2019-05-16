@@ -80,7 +80,6 @@ alias "-shoot" "-attack; r_particle_timescale 1" //muzzle flash
 bind_US_standard "mouse1" "+shoot" //muzzle flash
 
 //most commands here are for FPS improvements, feel free to adjust them if you'd like a bit more quality.
-csm_cascade_res 64
 cl_smooth "0"
 not_focus_sleep "0"
 cl_always_ragdoll_radius "0"
@@ -114,7 +113,6 @@ cl_threaded_client_leaf_system 1
 cl_smooth 0
 cl_particle_fallback_base "0"
 cl_particle_fallback_multiplier "0"
-csm_cascade_res 16
 dlight_enable 0
 env_lightglow 0
 dof_enable 0
