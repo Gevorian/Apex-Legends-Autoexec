@@ -1,4 +1,4 @@
-//Last updated May 14th, 2019 -- To find out when the Autoexec updates, please follow me on Twitter: twitter.com/Gevorian
+//Last updated May 16th, 2019
 
 //To find out when the Autoexec updates, please follow me on Twitter: Twitter.com/Gevorian
 
@@ -17,8 +17,10 @@ mat_letterbox_aspect_threshold 1.33
 
 //Preference commands  -- remove "//" if you want them to run
 //fps_max 0
-//r_dxgi_max_frame_latency 0 //Max # Pre-prepared frames (if you do not use profiles in the Nvidia Control Panel, use "1") (def. 0)
+//r_dxgi_max_frame_latency 0 //Max # Pre-prepared frames (Use this if you don't use custom NVIDIA Control Panel settings)
 //showfps_enabled 1 //shows fps in huge mumbo jumbo
+//mat_queue_mode "2" A value of -1 uses the default for your system, a value of 0 uses synchronous single thread, 1 uses queued single threaded mode
+and value of 2 uses multi-threaded mode.
 cl_drawmonitors 0 //disabling banner pics
 mat_screen_blur_enabled 0 //menu blur
 hud_setting_minimapRotate 1 //Rotating Minimap
@@ -34,6 +36,15 @@ n_usekeyboardsampletime 0 // On / Off keystroke smoothing parameter, reduces key
 //host_limitlocal 1
 //origin_presense_updateRate 10
 //cl_updaterate_mp 100; match_updateRate 100
+telemetry_client_enable "0"
+pin_opt_in "0"
+cl_interp "0"
+cl_interp_ratio "1"
+cl_smoothtime "0.01"
+//net_compresspackets "0"
+//net_compresspackets_minsize 128
+//net_maxcleartime 0.020346
+telemetry_client_enable 0
 
 //Mouse options
 m_rawinput "1"
@@ -54,9 +65,9 @@ miles_occlusion_server_sounds_per_frame "400" //default 60"
 miles_occlusion "0"
 miles_occlusion_force "0"
 miles_occlusion_partial "0"
-cl_footstep_event_max_dist 5000 //default "2500" 
+cl_footstep_event_max_dist 5000 //default "2500"
 rope_wind_dist 0
-//The below commands don't do anything; held here for the future. 
+//The below commands don't do anything; held here for the future.
 snd_mixahead "0.05"
 snd_headphone_pan_exponent "2"
 snd_musicvolume "0"
@@ -69,6 +80,16 @@ alias "-shoot" "-attack; r_particle_timescale 1" //muzzle flash
 bind_US_standard "mouse1" "+shoot" //muzzle flash
 
 //most commands here are for FPS improvements, feel free to adjust them if you'd like a bit more quality.
+csm_cascade_res 64
+cl_smooth "0"
+not_focus_sleep "0"
+cl_always_ragdoll_radius "0"
+cl_bones_incremental_blend "1"
+cl_phys_maxticks "2"
+r_norefresh "1"
+r_rootlod "2"
+cl_show_splashes "0"
+r_threaded_client_shadow_manager 1
 r_ambientfraction "0.2"
 bind_US_standard "f12" "exec autoexec" //Press F12 to exec autoexec if not already in launch options
 cl_cull_weapon_fx 0
@@ -138,7 +159,6 @@ mat_dof_max_blur_radius 0
 mat_dof_quality 0
 mat_dynamic_tonemapping 0
 mat_fastspecular 1
-mat_filterlightmaps 0
 mat_force_bloom 0
 mat_hdr_level 0
 mat_motion_blur_enabled 0
@@ -257,7 +277,7 @@ lightmap_ambient 0
 mat_colcorrection_disableentities 0
 mat_diffuse 0
 mat_filtertextures 0
-mat_filterlightmaps 1
+mat_filterlightmaps 0
 mat_screen_blur_enabled 0
 mat_local_contrast_scale_override 0
 mat_max_worldmesh_vertices "0"
