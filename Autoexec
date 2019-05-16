@@ -44,7 +44,6 @@ cl_smoothtime "0.01"
 //net_compresspackets "0"
 //net_compresspackets_minsize 128
 //net_maxcleartime 0.020346
-telemetry_client_enable 0
 
 //Mouse options
 m_rawinput "1"
