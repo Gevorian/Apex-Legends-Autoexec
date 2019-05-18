@@ -45,6 +45,7 @@ cl_smoothtime "0.01"
 //net_maxcleartime 0.020346
 
 //Mouse options
+//mouse_sensitivity "0.695000"
 m_rawinput "1"
 m_filter "0"
 m_customaccel "0"
@@ -52,7 +53,6 @@ m_customaccel_exponent "0"
 m_mouseaccel1 "0"
 m_mouseaccel2 "0"
 m_customaccel_max "0"
-//mouse_sensitivity "0.695000"
 joystick "0"
 joystick_force_disabled "1"
 joystick_force_disabled_set_from_options "1"
