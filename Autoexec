@@ -317,3 +317,4 @@ mat_use_compressed_hdr_textures 1
 r_particle_sim_spike_threshold_ms 0
 r_particles_cull_all "0"
 prop_active_gib_limit 0
+rspn_motd "Gevorian Autoexec Loaded"
