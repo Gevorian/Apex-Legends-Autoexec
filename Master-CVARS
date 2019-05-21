@@ -1,3 +1,7 @@
+//Credit to Diablo for his cvars, original github link; 
+https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout.txt
+
+
 [Interface."ClientRenderTargets001"]
 	address = 0x1755e88
 [Interface."EngineTraceClient004"]
