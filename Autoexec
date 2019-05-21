@@ -41,24 +41,24 @@ cl_drawmonitors 0 //disabling banner pics
 mat_screen_blur_enabled 0 //menu blur
 hud_setting_minimapRotate 1 //Rotating Minimap
 hud_setting_pingAlpha "0.400000" //ping and banner transparency
-r_drawtracers_firstperson "1" //set to 0 for no tracers on your bullets
+//r_drawtracers_firstperson "1" //set to 0 for no tracers on your bullets
 sprint_view_shake_style "1"   // Less Headbob
 staticProp_max_scaled_dist 1500 //The distance at which static objects will be rendered on the map -- try 500 if you have low FPS
 n_usekeyboardsampletime 0 // On / Off keystroke smoothing parameter, reduces keyboard input delay
 
 //Network commands -- Remove "//" to use these.
-rate 128000
-host_limitlocal 1
-origin_presense_updateRate 10
-cl_updaterate_mp 100; match_updateRate 100
-telemetry_client_enable "0"
-pin_opt_in "0"
-cl_interp "0"
-cl_interp_ratio "1"
-cl_smoothtime "0.01"
-net_compresspackets "0"
-net_compresspackets_minsize 128
-net_maxcleartime 0.020346
+//rate 128000
+//host_limitlocal 1
+//origin_presense_updateRate 10
+//cl_updaterate_mp 100; match_updateRate 100
+//telemetry_client_enable "0"
+//pin_opt_in "0"
+//cl_interp "0"
+//cl_interp_ratio "1"
+//cl_smoothtime "0.01"
+//net_compresspackets "0"
+//net_compresspackets_minsize 128
+//net_maxcleartime 0.020346
 
 //Mouse options
 m_rawinput "1"
