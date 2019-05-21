@@ -6,16 +6,16 @@
 
 //Tutorial Video: https://youtu.be/fAgmNfG_NlI
 
-//Commands for Stretched Resolution.
+//Commands for Stretched Resolution. -- No need to change the values, they will default to your resolution.
 mat_letterbox_aspect_goal 0
 mat_letterbox_aspect_threshold 0
 
-//Muzzle Flash Removal ----------------------------------------------------------------------------------------------------------------
+//Muzzle Flash Removal
 alias "+shoot" "+attack; r_particle_timescale 300" //muzzle flash ~set value to 3 if you want bullet tracers.
 alias "-shoot" "-attack; r_particle_timescale 1" //muzzle flash
 bind_US_standard "mouse1" "+shoot" //muzzle flash
 
-//+speed ADS zoom fix
+//+speed ADS zoom fix -- gives ability to change zoom in variable scopes while using +speed
 +speed
 alias "+speedfix" "+zoom; -speed"
 bind_US_standard "mouse2" "+speedfix"
