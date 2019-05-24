@@ -164,7 +164,6 @@ mat_dof_max_blur_radius 0
 mat_dof_quality 0
 mat_dynamic_tonemapping 0
 mat_fastspecular 1
-mat_force_bloom 0
 mat_hdr_level 0
 mat_motion_blur_enabled 0
 mat_non_hdr_bloom_scalefactor 0
