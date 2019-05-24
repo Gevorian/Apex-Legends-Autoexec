@@ -133,7 +133,6 @@ fps_max_use_refresh 0
 mat_picmip 4 // Basically this is the texture Quallity controller of the game 4 = Lowest ... 1 = High
 stream_memory 0   -- change this value to 0 if you havae mat_picmip set to 4
 mat_mip_linear 1
-mat_fastnobump 0
 mat_fastspecular 0
 mat_drawflat 1
 mat_antialias_mode 0
