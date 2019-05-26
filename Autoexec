@@ -37,7 +37,7 @@ mat_fullbright "1"				//Brighter materials/textures, very good to use.
 //r_dxgi_max_frame_latency 0 			//Max # Pre//prepared frames (Use this if you don't use custom NVIDIA Control Panel settings)
 //showfps_enabled 1 				//shows fps in huge mumbo jumbo
 mat_queue_mode "2" 				//A value of -1 uses the default for your system, a value of 0 uses synchronous single thread, 1 uses queued single threaded mode
-										and value of 2 uses multi-threaded mode.
+						and value of 2 uses multi-threaded mode.
 cl_drawmonitors 0 				//disabling banner pics
 mat_screen_blur_enabled 0 			//menu blur
 hud_setting_minimapRotate 1 			//Rotating Minimap
