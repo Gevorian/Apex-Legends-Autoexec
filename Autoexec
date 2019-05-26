@@ -1,4 +1,4 @@
-//Last updated May 21st, 2019
+//Last updated May 26th, 2019
 
 //To find out when the Autoexec updates, please follow me on Twitter: Twitter.com/Gevorian
 
@@ -14,10 +14,9 @@ mat_letterbox_aspect_threshold 0
 alias "+shoot" "+attack; r_particle_timescale 300" //muzzle flash ~set value to 3 if you want bullet tracers.
 alias "-shoot" "-attack; r_particle_timescale 1" //muzzle flash
 bind_US_standard "mouse1" "+shoot" //muzzle flash
-
 //+speed ADS zoom fix -- gives ability to change zoom in variable scopes while using +speed
-alias "+speedfix" "+zoom; -speed" 
-alias "-speedfix" "-zoom; +speed" 
+alias "+speedfix" "+zoom; -speed"
+alias "-speedfix" "-zoom; +speed"
 bind_US_standard "mouse2" "+speedfix"
 
 //Custom FOV
@@ -31,7 +30,8 @@ bind_US_standard "mouse2" "+speedfix"
 //bind MWHEELDOWN "+jump"
 //bind MWHEELUP "+jump"
 
-//Preference commands  -- remove "//" if you want them to run
+//Preference commands-- remove "//" if you want them to run
+//mat_fullbright "1" -- Brighter materials/textures, very good to use.
 //fps_max 0
 //r_dxgi_max_frame_latency 0 //Max # Pre-prepared frames (Use this if you don't use custom NVIDIA Control Panel settings)
 //showfps_enabled 1 //shows fps in huge mumbo jumbo
@@ -41,8 +41,7 @@ cl_drawmonitors 0 //disabling banner pics
 mat_screen_blur_enabled 0 //menu blur
 hud_setting_minimapRotate 1 //Rotating Minimap
 hud_setting_pingAlpha "0.400000" //ping and banner transparency
-//r_drawtracers_firstperson "1" //set to 0 for no tracers on your bullets
-sprint_view_shake_style "1"   // Less Headbob
+sprint_view_shake_style "1" // Less Headbob
 staticProp_max_scaled_dist 1500 //The distance at which static objects will be rendered on the map -- try 500 if you have low FPS
 n_usekeyboardsampletime 0 // On / Off keystroke smoothing parameter, reduces keyboard input delay
 
@@ -74,7 +73,7 @@ joystick_force_disabled "1"
 joystick_force_disabled_set_from_options "1"
 unbindalljoystick
 
-//Audio Commands -- Most of these are disables to the recent audio patch, still testing these. 
+//Audio Commands -- Most of these are disables to the recent audio patch, still testing these.
 //miles_occlusion_server_sounds_per_frame "400" //default 60"
 //miles_occlusion "0"
 //miles_occlusion_force "0"
@@ -86,7 +85,6 @@ rope_wind_dist 0
 bind_US_standard "f12" "exec autoexec" //Press F12 to exec autoexec if not already in launch options
 r_eyegloss "0"
 r_eyemove "0"
-r_eyes "0"
 r_3dsky 0
 Allowoverbright "1"
 cl_smooth "0"
@@ -94,9 +92,7 @@ not_focus_sleep "0"
 cl_always_ragdoll_radius "0"
 cl_bones_incremental_blend "1"
 cl_phys_maxticks "2"
-r_norefresh "1"
 r_rootlod "2"
-cl_show_splashes "0"
 r_threaded_client_shadow_manager 1
 r_ambientfraction "0.2"
 cl_cull_weapon_fx 0
@@ -109,11 +105,6 @@ cl_jiggle_bone_framerate_cutoff 0
 cl_new_impact_effects 0
 cl_show_splashes 0
 cl_particle_max_count 0
-cl_ragdoll_force_fade_time "0"
-cl_ragdoll_force_fade_time_local_view_player "0"
-cl_ragdoll_force_fade_time_on_moving_geo "0"
-cl_ragdoll_self_collision "0"
-cl_ragdoll_maxcount "0"
 cl_updaterate_mp "120"
 cl_showpos "0"
 cl_threaded_bone_setup 1
@@ -130,17 +121,14 @@ fog_enable_water_fog 0
 fog_volume 0
 fog_enableskybox 1
 fps_max_use_refresh 0
-mat_picmip 4 // Basically this is the texture Quallity controller of the game 4 = Lowest ... 1 = High
-stream_memory 0   -- change this value to 0 if you havae mat_picmip set to 4
+mat_picmip 4
+stream_memory 0
 mat_mip_linear 1
 mat_fastspecular 0
 mat_drawflat 1
 mat_antialias_mode 0
 mat_debug_tonemapping_disable 1
 mat_sun_highlight_size 0
-mat_antialias_mode "0"
-mat_colcorrection_disableentities "1"
-mat_fxaa_enable "0"
 mat_diffuse 1
 mat_reduceparticles 1
 hud_setting_adsDof 0
@@ -151,7 +139,6 @@ mat_bloomscale 0
 mat_bumpmap 0
 mat_colorcorrection 0
 mat_depthbias_shadowmap 0
-mat_shadowstate "0"
 mat_depthbias_tightshadowmap 0
 mat_disable_bloom 1
 mat_disable_dof 1
@@ -175,15 +162,9 @@ mat_shadowstate 0
 mat_showlowresimage 1
 mat_specular 0
 particle_dlights_enable 0
-r_rimlight "0"
-r_drawscreenspaceparticles "0"
 r_waterdrawreflection "0"
-r_waterdrawrefraction "0"
 r_waterforceexpensive "0"
-r_waterforcereflectentities "0"
 r_fastzreject "0"
-r_jiggle_bones "0"
-r_modeldecal_maxtotal "1"
 r_DrawDisp 0
 r_PhysPropLighting 0
 r_ambientrefraction 0
@@ -203,20 +184,14 @@ r_shadowmaxrendered 0
 r_shadowrendertotexture 0
 r_shadows 0
 r_sse_s 0
-r_volumetric_lighting_enabled "0"
 shadow_default_filter_size 0
 shadow_filter_maxstep 0
 shadow_maxspotshadows 0
 func_break_max_pieces "0"
 m_acceleration "0"
-cl_predict "1"
 bob_yaw "0"
 bob_pitch "0"
-ssao_blur 0
 stream_drop_unused 1
-viewmodel_selfshadow "0"
-violence_ablood "0"
-violence_hblood "0"
 cl_gib_allow	"0"
 cl_particle_fallback_base	"-1"
 cl_particle_fallback_multiplier	"-1"
@@ -253,9 +228,6 @@ r_particle_low_res_enable	"1"
 cl_particle_max_count	"-1"
 cl_particle_limiter_max_particle_count	"-1"
 cl_particle_limiter_max_system_count	"-1"
-mat_depthfeather_enable "0"
-//Exposure
-mat_autoexposure_override_min_max "1" // required to get the other auto exposure commands working
 hud_setting_pingDoubleTapEnemy "0"
 mat_compressedtextures 1
 cl_ragdoll_collide 0
@@ -292,7 +264,6 @@ shadow_capable 0
 shadow_enable 0
 viewmodel_selfshadow 0
 static_shadow "1"
-static_shadow_res "0"
 cl_disable_ragdolls 1
 cl_use_simd_bones 1
 cl_simdbones_slerp 1
@@ -313,4 +284,315 @@ mat_use_compressed_hdr_textures 1
 r_particle_sim_spike_threshold_ms 0
 r_particles_cull_all "0"
 prop_active_gib_limit 0
+hudwarp_override "1"
+dof_overrideParams "0"
+tsaa_blendfactoroverride "1"
+mat_screen_blur_override "1"
+mat_autoexposure_override_min_max "1"
+map_settings_override "1"
+rui_overrideVguiTextRendering"1"
+mat_envmap_scale "1"
+mat_envmapsize "8"
+mat_envmaptgasize"8"
+mat_drawflat "1"
+mat_diffuse "0"	def 1
+mat_depthtest_force_disabled "1"
+mat_disable_bloom "1"
+mat_disable_lightmap_ambient "1"
+mat_force_bloom "0"
+mat_fastnobump "1"
+mat_fastspecular "1"
+mat_disable_lightmaps "1"
+mat_disable_lightwarp "1"
+mat_bloomscale "0"
+mat_bloom_streak_amount "0"
+mat_bloom_wide_amount "0"
+mat_global_lighting "0"
+mat_dynamic_tonemapping "0"
+mat_specular "0"
+mat_disable_model_ambient "1"
+mat_compressedtextures "1"
+mat_use_compressed_hdr_textures "1"
+mat_bumpmap "0"
+mat_showlowresimage "1"
+mat_hdr_enabled "0"
+mat_hdr_level "0"
+mat_postprocess_enable "0"
+mat_vignette_enable "0"
+mat_enable_ssr "0"
+mat_fxaa_enable "0"
+mat_mip_linear "0"
+mat_reducefillrate "1"
+mat_shadowstate "0"
+mat_filtertextures "0"
+mat_depthfeather_enable "0"
+mat_depthbias_shadowmap "0"
+mat_depthbias_tightshadowmap "0"
+mat_disable_dof "1"
+mat_dof_enabled "0"
+mat_dof_max_blur_radius "0"
+mat_dof_quality "0"
+mat_disable_fancy_blending "1"
+mat_displacementmap "0"
+mat_reduceparticles "1"
+mat_instancing "1"
+mat_sky_scale "5"
+mat_colorcorrection_editor "0"
+mat_grain_enable "0"
+mat_antialias "0"
+mat_forceaniso "0"
+mat_screen_blur_enabled "0"
+mat_motion_blur_enabled "0"
+mat_motion_blur_falling_intensity "0"
+mat_motion_blur_falling_max "0"
+mat_motion_blur_falling_min "0"
+mat_motion_blur_forward_enabled "0"
+mat_motion_blur_percent_of_screen_max "0"
+mat_motion_blur_rotation_intensity "0"
+mat_motion_blur_strength "0"
+mat_colcorrection_disableentities "1"
+mat_shadercount "0"
+mat_vsync "0"
+mat_hide_sun_in_last_cascade "1"
+mat_antialias_mode "0"
+mat_colorcorrection "0"
+mat_aaquality "0"
+mat_alphacoverage "0"
+mat_software_aa_strength "0"
+mat_software_aa_strength_vgui "0"
+mat_disable_particles "0"
+mat_normalmaps "0"
+mat_normals "0"
+mat_postprocessing_combine "0"
+mat_non_hdr_bloom_scalefactor "0"
+mat_clipz "1"
+mat_viewportscale "1"
+mat_tonemapping_occlusion_use_stencil "1"
+mat_syncGPU "0"
+mat_sharpen_amount "0"
+mat_light_edit "1"
+mat_depthbias_shadowmap "0.00001"
+mat_cloudmask"0"def 0
+mat_filterlightmaps"0"
+mat_picmip "4"
+r_dynamic"0"
+r_fastzreject "1"
+r_decalstaticprops "0"
+r_decals "0"
+r_forcecheapwater"1"
+r_waterdrawreflection"0"
+r_waterforceexpensive"0"
+r_waterforcereflectentities "0"
+r_jiggle_bones "0"
+r_shadows "0"
+r_shadowrendertotexture "0"
+r_shadowmaxrendered "0"
+r_modeldecal_maxtotal "1"
+r_rimlight "0"
+r_threaded_particles "1"
+r_updaterefracttexture_allowmultiple "0"
+r_maxdlights "0"
+r_volumetric_lighting_enabled "0"
+r_particle_lighting_enable "0"
+r_particle_low_res_enable "1"
+r_occlusion "1"
+r_occludeemaxarea "1"
+r_occluderminarea "10"
+r_worldlights"0"
+r_3dsky "0"
+r_renderoverlayfragment "0"
+r_eyes "0"
+r_teeth "0"
+r_flex "0"
+r_drawdetailprops "0"
+r_propsmaxdist "1"
+r_drawmodeldecals "0"
+r_maxmodeldecal "0"
+r_drawscreenspaceparticles "0"
+r_waterdrawrefraction "0"
+r_ambientmin "0"
+r_lightaverage "0"
+r_flashlightdepthtexture "0"
+r_glint_procedural "1"
+r_norefresh "1"
+r_queued_post_processing "1"
+r_drawflecks "0"
+r_particle_sim_spike_threshold_ms "0"
+r_PhysPropStaticLighting "1"
+r_overlayfadeenable "0"
+r_fullscreen "1"
+r_dopixelvisibility "0"
+r_ropetranslucent "0"
+r_flashlightscissor "1"
+r_entityclips "1"
+r_visambient "0"
+r_hunkalloclightmaps "0"
+r_dxgi_max_frame_latency "0"
+r_DrawDisp "0"
+r_drawparticles "0"
+r_drawsprites "0"
+r_drawstaticlight "0"
+r_drawviewmodel "0"
+r_dynamiclighting "0"
+r_particle_lighting_force "0"
+r_sse_s "0"
+r_visualizetraces "0"
+r_vismodellighting "0"def 0
+r_updaterefracttexture "0"
+r_txaaEnabled "0"
+r_modeldecal_maxtotal "0"
+r_drawworld "0"
+r_drawtranslucentrenderables "0"
+r_drawstaticprops "0"
+r_drawsky "0"
+r_drawopaquerenderables "0"
+r_drawentities "0"
+r_drawbrushmodels"0"
+r_ditherAlpha "0"
+r_ditherFade "0"
+r_blurmenubg "0"
+r_DrawBeams "0"
+r_threadeddetailprops"1"
+r_queued_ropes "1"
+cl_cull_weapon_fx "0"
+cl_ejectbrassn "0"
+cl_lagcompensation "1"
+cl_predictweapons"1"
+cl_predict "1"
+cl_disable_ragdolls "1"
+cl_ragdoll_collide "0"
+cl_ragdoll_force_fade_time "0"
+cl_ragdoll_force_fade_time_local_view_player "0"
+cl_ragdoll_force_fade_time_on_moving_geo "0"
+cl_ragdoll_self_collision "0"
+cl_ragdoll_maxcount "0"
+cl_particle_max_count "0"
+cl_particle_limiter_max_particle_count "10"
+cl_particle_limiter_max_system_count "10"
+cl_forcepreload "0"
+cl_drawmonitors "0"
+cl_detailfade "0"
+cl_detaildist "0"
+cl_drawshadowtexture "0"
+cl_jiggle_bone_framerate_cutoff "0"
+cl_new_impact_effects "0"
+cl_show_splashes "0"
+cl_showfiredbullets "0"
+cl_particle_limiter_min_kill_distance "1"
+cl_muzzleflash_dlight_1st"0"
+cl_SetupAllBones "0"
+cl_aggregate_particles "1"
+cl_allowAnimsToInterpolateBackward "0"
+cl_threaded_bone_setup "1"
+cl_anim_detail_dist "1"
+cl_anim_face_dist "1"
+cl_decal_alwayswhite "1"
+cl_idealpitchscale "0"
+cl_minimal_rtt_shadows "1"
+cl_particle_snoozetime "0.166667"
+cl_phys_maxticks "3"
+cl_phys_props_enable "0"
+stream_cache_high_priority_static_models "1"
+stream_cache_preload_from_rpak "1"
+stream_drop_unused "1"
+stream_enable"0"
+stream_memory "1"
+stream_picmip "4"
+anim_3wayblend "0"
+ai_expression_frametime"0"
+bink_materials_enabled "0"
+bink_preload_videopanel_movies "0"
+building_cubemaps"1"
+csm_coverage "0"
+csm_enabled "0"
+csm_world_shadows"0"
+csm_cascade_res"0"
+csm_quality_level"1"
+csm_renderable_shadows "0"
+csm_rope_shadows "0"
+disp_dynamic "0"
+dvs_enable "0"
+dlight_enable "0"
+dof_enable "0"
+dodge_viewTiltMax "0"
+env_lightglow "0"
+engine_no_focus_sleep "0"
+exec usersettings.cfg
+fog_enable "0"
+fog_enableskybox "0"
+fog_enable_water_fog "0"
+fog_volume "0"
+flex_rules "0"
+flex_smooth"0"
+g_ragdoll_fadespeed "10000"
+g_ragdoll_lvfadespeed "10000"
+hudchat_new_message_fade_duration"1"
+host_threaded_sound"0"def 0
+host_sleep "0"
+mp_usehwmmodels "-1"
+mp_usehwmvcds "-1"
+intro_viewed "1"
+lightmap_realtimelight "0"
+lightmap_realtimeshadows "0"
+lightmap_ambient "0"
+mp_decals "0"	Disable decals
+muzzleflash_light "0"
+modeldecals_forceAllowed "0"
+model_fadeRangeFraction "0"
+not_focus_sleep "9999999999999"
+nb_shadow_dist "0"
+pvs_yield "1"
+projectile_filltrails "2"
+projectile_faketrails "0"
+pertrianglecollision "0"
+particle_dlights_enable"0"
+particle_gpu_level "0"
+rope_solid_minalpha "0"
+rope_solid_minwidth "0.1"
+rope_smooth "0"
+rope_subdiv "0"
+rope_collide "0"
+rope_wind_dist "0"
+rope_averagelight"0"
+rope_rendersolid "0"
+ragdoll_sleepaftertime "0"
+sort_opaque_meshes "1"
+ssao_enabled "0"
+sssss_enable "0"
+shadow_capable "0"
+shadow_enable "0"
+shadow_default_filter_size "0"
+shadow_filter_maxstep "0"
+shadow_maxspotshadows "0"
+showfps_enabled "0"
+showfps_heightpercent "0"
+showfps_mouse_latency "0"
+showfps_smoothtime "0"
+showfps_spinner "0"
+showhitlocation "0"
+showmem_enabled "0"
+shownet_enabled "0"
+showsnapshot_enabled "0"
+ssao_blur "0"
+static_shadow "0"
+static_shadow_res "0"
+shadow_multisampled "0"
+stream_mips_use_staging_texture"0" 	//def 0
+shake_offsetFactor_human "0" 		//def 1
+sleep_when_meeting_framerate "0"
+sleep_when_meeting_framerate_headroom_ms "0"
+tsaa_numsamples "64" 			//def 64
+tsaa_curframeblendamount "0.05" 	//def 0.05
+tf_particles_disable_weather "1"
+tweak_light_shadows_every_frame "0"
+tracer_extra "0"
+violence_hblood "0"
+violence_hgibs "0"
+violence_agibs "0"
+violence_ablood "0"
+viewmodel_selfshadow "0"
+viewmodelShake_sourceRollRange "0"
+viewmodelShake "0"
+vsm_ignore_face_planes "1"
+vphysics_threadmode "1"
 rspn_motd "Gevorian Autoexec Loaded"
