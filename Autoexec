@@ -90,7 +90,6 @@ r_rootlod "2"
 r_threaded_client_shadow_manager 1
 r_ambientfraction ".2"
 cl_ejectbrass 0
-cl_updaterate_mp "2"
 cl_showpos "0" 
 cl_threaded_client_leaf_system 1
 cl_smooth 0
