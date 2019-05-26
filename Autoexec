@@ -6,17 +6,18 @@
 
 //Tutorial Video: https://youtu.be/fAgmNfG_NlI
 
-//Commands for Stretched Resolution. -No need to change the values, they will default to your resolution.
+//Commands for Stretched Resolution. -No need to change the values, it will default to your resolution.
 mat_letterbox_aspect_goal 0
 mat_letterbox_aspect_threshold 0
 
 //Muzzle Flash Removal
 alias "+shoot" "+attack; r_particle_timescale 300" //muzzle flash ~set value to 3 if you want bullet tracers.
-alias "//shoot" "//attack; r_particle_timescale 1" //muzzle flash
+alias "-shoot" "-attack; r_particle_timescale 1"
 bind_US_standard "mouse1" "+shoot" //muzzle flash
-//+speed ADS zoom fix //// gives ability to change zoom in variable scopes while using +speed
-alias "+speedfix" "+zoom; //speed"
-alias "//speedfix" "//zoom; +speed"
+
+//+speed ADS zoom fix - gives ability to change zoom in variable scopes while using +speed
+alias "+speedfix" "+zoom; -speed"
+alias "-speedfix" "-zoom; +speed"
 bind_US_standard "mouse2" "+speedfix"
 
 //Custom FOV
@@ -27,23 +28,23 @@ bind_US_standard "mouse2" "+speedfix"
 //1.70 is 120
 
 //BHOP BINDS
-//bind MWHEELDOWN "+jump"
-//bind MWHEELUP "+jump"
+bind MWHEELDOWN "+jump"
+bind MWHEELUP "+jump"
 
 //Preference commands
-//mat_fullbright "1"					//Brighter materials/textures, very good to use.
+mat_fullbright "1"				//Brighter materials/textures, very good to use.
 //fps_max 0
 //r_dxgi_max_frame_latency 0 			//Max # Pre//prepared frames (Use this if you don't use custom NVIDIA Control Panel settings)
-//showfps_enabled 1 					//shows fps in huge mumbo jumbo
-mat_queue_mode "2" 						//A value of //1 uses the default for your system, a value of 0 uses synchronous single thread, 1 uses queued single threaded mode
-										and value of 2 uses multi//threaded mode.
-cl_drawmonitors 0 						//disabling banner pics
-mat_screen_blur_enabled 0 				//menu blur
+//showfps_enabled 1 				//shows fps in huge mumbo jumbo
+mat_queue_mode "2" 				//A value of -1 uses the default for your system, a value of 0 uses synchronous single thread, 1 uses queued single threaded mode
+										and value of 2 uses multi-threaded mode.
+cl_drawmonitors 0 				//disabling banner pics
+mat_screen_blur_enabled 0 			//menu blur
 hud_setting_minimapRotate 1 			//Rotating Minimap
 hud_setting_pingAlpha "0.400000" 		//ping and banner transparency
 sprint_view_shake_style "1" 			// Less Headbob
 staticProp_max_scaled_dist 1500 		//The distance at which static objects will be rendered on the map //// try 500 if you have low FPS
-n_usekeyboardsampletime 0 				//On / Off keystroke smoothing parameter, reduces keyboard input delay
+n_usekeyboardsampletime 0 			//On / Off keystroke smoothing parameter, reduces keyboard input delay
 
 //Network commands
 //rate 128000
@@ -196,8 +197,8 @@ mat_motion_blur_percent_of_screen_max "0"
 mat_motion_blur_rotation_intensity "0"
 mat_motion_blur_strength "0"
 mat_colcorrection_disableentities "1"
-mat_shadercount "0"								//Forces the game into using multiple threads
-mat_vsync "0"									//Ensure VSync is disabled by default
+mat_shadercount "0"							//Forces the game into using multiple threads
+mat_vsync "0"								//Ensure VSync is disabled by default
 mat_hide_sun_in_last_cascade "1"
 mat_antialias_mode "0"
 mat_colorcorrection "0"
@@ -235,15 +236,15 @@ r_shadowmaxrendered "0"
 r_rimlight "0"
 r_threaded_particles "1"
 r_updaterefracttexture_allowmultiple "0"
-r_maxdlights "0"								//Determines the maximum number of dynamic lights visible on the screen
+r_maxdlights "0"							//Determines the maximum number of dynamic lights visible on the screen
 r_volumetric_lighting_enabled "0"
 r_particle_lighting_enable "0"
 r_particle_low_res_enable "1"
-r_occlusion "1"									//Use CPU to have the GPU skip rendering models/props you cannot see
+r_occlusion "1"								//Use CPU to have the GPU skip rendering models/props you cannot see
 r_occludeemaxarea "1"							//Skip occlusion of objects that are too large to test for
 r_occluderminarea "10"							//Skip occluders that are too small to block anything
 r_worldlights "0"
-r_3dsky "0"										//Show 3D Backgrounds
+r_3dsky "0"								//Show 3D Backgrounds
 r_renderoverlayfragment"0" 
 r_eyes "0"
 r_teeth "0"
@@ -258,17 +259,17 @@ r_ambientmin "0"
 r_lightaverage "0"
 r_flashlightdepthtexture "0"
 r_glint_procedural "1"							//(0)Use the default eye glinting method. (1) Use CPU eye glinting, for fast CPUs and slow GPUs
-r_norefresh "1"									//Do not store a useless and unused frame time variable
-r_queued_post_processing "1"					//Offloads post processing to the material system.
+r_norefresh "1"								//Do not store a useless and unused frame time variable
+r_queued_post_processing "1"						//Offloads post processing to the material system.
 r_drawflecks "0"
 r_particle_sim_spike_threshold_ms "0"
-r_PhysPropStaticLighting "1"					//Use premade lighting for props
+r_PhysPropStaticLighting "1"						//Use premade lighting for props
 r_overlayfadeenable "0"
 r_fullscreen "1"
 r_dopixelvisibility "0"
 r_ropetranslucent "0"							//Skip simulating ropes
 r_flashlightscissor "1"
-r_entityclips "1"								//(0)Skip clipping entities, saves CPU time, (1) Clip entities when the CPU cost is worth saving GPU work
+r_entityclips "1"							//(0)Skip clipping entities, saves CPU time, (1) Clip entities when the CPU cost is worth saving GPU work
 r_visambient "0"
 r_hunkalloclightmaps "0"						//If a lightmap cannot be fit into the hunk, use dynamic memory
 r_DrawDisp "0"
@@ -297,10 +298,10 @@ r_DrawBeams "0"
 r_threadeddetailprops "1"
 r_queued_ropes "1"
 cl_cull_weapon_fx "0"							//Disables weapon FX
-cl_ejectbrass "0"								//Disables brass ejection
+cl_ejectbrass "0"							//Disables brass ejection
 cl_lagcompensation "1"
 cl_predictweapons "1"							//Perform client side prediction of weapon effects.
-cl_predict "1"									//Perform client side prediction.
+cl_predict "1"								//Perform client side prediction.
 cl_disable_ragdolls "1"
 cl_ragdoll_collide "0"
 cl_ragdoll_force_fade_time "0"
@@ -312,8 +313,8 @@ cl_particle_max_count "0"
 cl_particle_limiter_max_particle_count "10"
 cl_particle_limiter_max_system_count "10"
 cl_forcepreload "0"
-cl_detailfade "0"								//Distance across which detail props fade in
-cl_detaildist "0"								//Distance at which detail props are no longer visible
+cl_detailfade "0"							//Distance across which detail props fade in
+cl_detaildist "0"							//Distance at which detail props are no longer visible
 cl_drawshadowtexture "0"
 cl_jiggle_bone_framerate_cutoff "0"
 cl_new_impact_effects "0"
@@ -351,8 +352,8 @@ csm_cascade_res "0"
 csm_quality_level "1"
 csm_renderable_shadows "0"
 csm_rope_shadows "0"
-disp_dynamic "0"								//Do not use dynamic meshses for world geometry
-dvs_enable "0"									//Enable dynamic viewport scaling.
+disp_dynamic "0"							//Do not use dynamic meshses for world geometry
+dvs_enable "0"								//Enable dynamic viewport scaling.
 dlight_enable "0"
 dof_enable "0"
 dodge_viewTiltMax "0"
@@ -366,17 +367,17 @@ fog_volume "0"
 flex_rules "0"
 flex_smooth "0"
 g_ragdoll_fadespeed "10000"						//The rate of ragdoll fading
-g_ragdoll_lvfadespeed "10000"					//The rate of ragdoll fading in low violence
+g_ragdoll_lvfadespeed "10000"						//The rate of ragdoll fading in low violence
 hudchat_new_message_fade_duration "1"
 host_threaded_sound "0"
 host_sleep "0"
 mp_usehwmmodels "//1"							//Do not use or load high quality characters
-mp_usehwmvcds "//1"								//Do not use or load high quality character facial expressions
+mp_usehwmvcds "//1"							//Do not use or load high quality character facial expressions
 intro_viewed "1" 
 lightmap_realtimelight "0"
 lightmap_realtimeshadows "0"
 lightmap_ambient "0"							
-mp_decals "0"									//Disable decals
+mp_decals "0"								//Disable decals
 muzzleflash_light "0"
 modeldecals_forceAllowed "0"
 model_fadeRangeFraction "0"
@@ -390,10 +391,10 @@ particle_dlights_enable "0"
 particle_gpu_level "0"
 rope_solid_minalpha "0"							//Skip drawing non//solid part of ropes
 rope_solid_minwidth "0.1"						//Skip drawing ropes if they are not large enough on screen
-rope_smooth "0"									//Skip a long smoothing operation for ropes
-rope_subdiv "0"									//Skip heavy loops for rope subdivisions
-rope_collide "0"								//Skip CPU heavy world collisions for ropes
-rope_wind_dist "0"								//Do not apply CPU intensive wind to ropes
+rope_smooth "0"								//Skip a long smoothing operation for ropes
+rope_subdiv "0"								//Skip heavy loops for rope subdivisions
+rope_collide "0"							//Skip CPU heavy world collisions for ropes
+rope_wind_dist "0"							//Do not apply CPU intensive wind to ropes
 rope_averagelight "0" 							//(1)Only use average light, instead of an extra max intensity average with 0. (0) Simplify rope lighting for weak GPUs, at the cost of a bit of CPU time
 rope_rendersolid "0" 							//Skip rendering solid part of ropes
 ragdoll_sleepaftertime "0"
