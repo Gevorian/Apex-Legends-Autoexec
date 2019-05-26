@@ -78,6 +78,7 @@ unbindalljoystick
 //miles_occlusion "0"
 //miles_occlusion_force "0"
 //miles_occlusion_partial "0"
+miles_channels 2
 cl_footstep_event_max_dist 5000 //default "2500"
 rope_wind_dist 0
 
