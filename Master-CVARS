@@ -1,438 +1,13 @@
 //Credit to Diablo for his cvars, original github link; 
 https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout.txt
 
+ConVar = Console Varible, most of the commands here do not work, feel free to test some of them in-game
+it is impossible for me to go through each and every command and see if they work, the commands that are 
+imported from Titanfall obviously will not work. 
 
-[Interface."ClientRenderTargets001"]
-	address = 0x1755e88
-[Interface."EngineTraceClient004"]
-	address = 0x1747428
-[Interface."EngineTraceClientDecals004"]
-	address = 0x1747408
-[Interface."EventSystem001"]
-	address = 0x1f71f30
-[Interface."GameUI011"]
-	address = 0x2381280
-[Interface."ISoundC002"]
-	address = 0x174a938
-[Interface."RunGameEngine005"]
-	address = 0x19ebdc8
-[Interface."ServerGameClients004"]
-	address = 0x23ef158
-[Interface."ServerGameDLL005"]
-	address = 0x23fb940
-[Interface."ServerGameEnts002"]
-	address = 0x23f19b8
-[Interface."ShaderSystem002"]
-	address = 0x19e9718
-[Interface."VClient018"]
-	address = 0x1f73e40
-[Interface."VClientEntityList003"]
-	address = 0x2216dd8
-[Interface."VClientPrediction001"]
-	address = 0x2380bf0
-[Interface."VCvarQuery001"]
-	address = 0x174aa10
-[Interface."VDebugOverlay004"]
-	address = 0x17495b0
-[Interface."VENGINE_GAMEUIFUNCS_VERSION005"]
-	address = 0x174af38
-[Interface."VENGINE_LAUNCHER_API_VERSION004"]
-	address = 0x18dda00
-[Interface."VEngineModel016"]
-	address = 0x1759730
-[Interface."VEngineRandom001"]
-	address = 0x174a578
-[Interface."VEngineRenderView013"]
-	address = 0x1749c88
-[Interface."VGUI_System010"]
-	address = 0x1f6dda0
-[Interface."VMaterialSystemConfig004"]
-	address = 0x22517870
-[Interface."VPhysicsDebugOverlay001"]
-	address = 0x17495b8
-[Interface."VServerDllSharedAppSystems001"]
-	address = 0x23f29d8
-[Misc]
-	NUM_ENT_ENTRIES = 0x10000
-	cl_entitylist = 0x1f96d88
-	LocalEntityHandle = 0x1747efc
-	GlobalVars = 0x1822c10
-[ClientClass."CAI_BaseNPC"]
-	address = 0x175a8a8
-	size = 6464
-[ClientClass."CAmbientGeneric"]
-	address = 0x17567d8
-	size = 2688
-[ClientClass."CBaseAnimating"]
-	address = 0x17596f8
-	size = 4800
-[ClientClass."CBaseAnimatingOverlay"]
-	address = 0x1757978
-	size = 5568
-[ClientClass."CBaseButton"]
-	address = 0x175a628
-	size = 2688
-[ClientClass."CBaseCombatCharacter"]
-	address = 0x1753888
-	size = 6016
-[ClientClass."CBaseEntity"]
-	address = 0x1759878
-	size = 2560
-[ClientClass."CBaseGrenade"]
-	address = 0x18d90b8
-	size = 10112
-[ClientClass."CBaseParticleEntity"]
-	address = 0x19e9728
-	size = 2880
-[ClientClass."CBaseTempEntity"]
-	address = 0x175a158
-	size = 40
-[ClientClass."CBaseToggle"]
-	address = 0x1757ff8
-	size = 2624
-[ClientClass."CBaseTrigger"]
-	address = 0x18215a8
-	size = 2688
-[ClientClass."CBaseVPhysicsTrigger"]
-	address = 0x175b8c8
-	size = 2624
-[ClientClass."CBaseViewModel"]
-	address = 0x18d93d8
-	size = 19328
-[ClientClass."CBeam"]
-	address = 0x18d9158
-	size = 2752
-[ClientClass."CBoneFollower"]
-	address = 0x1751be8
-	size = 2624
-[ClientClass."CBreakableProp"]
-	address = 0x1753448
-	size = 4864
-[ClientClass."CBreakableSurface"]
-	address = 0x1755988
-	size = 3840
-[ClientClass."CCascadeLight"]
-	address = 0x17533a8
-	size = 2944
-[ClientClass."CColorCorrection"]
-	address = 0x1758b18
-	size = 2944
-[ClientClass."CCrossbowBolt"]
-	address = 0x1f75488
-	size = 9984
-[ClientClass."CDynamicLight"]
-	address = 0x17584f8
-	size = 2624
-[ClientClass."CDynamicProp"]
-	address = 0x1759658
-	size = 4928
-[ClientClass."CDynamicPropLightweight"]
-	address = 0x1751e68
-	size = 4928
-[ClientClass."CEntityBlocker"]
-	address = 0x18db098
-	size = 2560
-[ClientClass."CEntityDissolve"]
-	address = 0x1757038
-	size = 2688
-[ClientClass."CEntityLinkPage"]
-	address = 0x1821288
-	size = 4672
-[ClientClass."CEnvTonemapController"]
-	address = 0x1755038
-	size = 2624
-[ClientClass."CEnvWind"]
-	address = 0x1752fe8
-	size = 2944
-[ClientClass."CFirstPersonProxy"]
-	address = 0x1f74308
-	size = 4864
-[ClientClass."CFogController"]
-	address = 0x1758a78
-	size = 2688
-[ClientClass."CFuncBrush"]
-	address = 0x1757798
-	size = 2688
-[ClientClass."CFuncBrushLightweight"]
-	address = 0x1755498
-	size = 2688
-[ClientClass."CFuncMoveLinear"]
-	address = 0x1754f98
-	size = 2624
-[ClientClass."CGameRulesProxy"]
-	address = 0x18dd258
-	size = 2560
-[ClientClass."CGlobalNonRewinding"]
-	address = 0x18da738
-	size = 3648
-[ClientClass."CGrappleHook"]
-	address = 0x1f755c8
-	size = 4864
-[ClientClass."CHardPointEntity"]
-	address = 0x175c908
-	size = 2624
-[ClientClass."CHardPointFrontierEntity"]
-	address = 0x175d748
-	size = 2624
-[ClientClass."CHealthKit"]
-	address = 0x19ea268
-	size = 4800
-[ClientClass."CImportantOnEntSound"]
-	address = 0x1821928
-	size = 2624
-[ClientClass."CInfoPlacementHelper"]
-	address = 0x1f66178
-	size = 2624
-[ClientClass."CInfoTarget"]
-	address = 0x18db598
-	size = 2560
-[ClientClass."CInfoTargetGravity"]
-	address = 0x18d8ed8
-	size = 2624
-[ClientClass."CInfoTargetMinimap"]
-	address = 0x18da2d8
-	size = 2560
-[ClientClass."CMissile"]
-	address = 0x1f6e1b8
-	size = 10176
-[ClientClass."CMovieDisplay"]
-	address = 0x17534e8
-	size = 2944
-[ClientClass."CNPC_Drone"]
-	address = 0x1754ef8
-	size = 6528
-[ClientClass."CNPC_Dropship"]
-	address = 0x1754b38
-	size = 6592
-[ClientClass."CNPC_SentryTurret"]
-	address = 0x1751fa8
-	size = 6528
-[ClientClass."CNPC_Titan"]
-	address = 0x1756698
-	size = 6656
-[ClientClass."CParticleSystem"]
-	address = 0x1756c78
-	size = 2752
-[ClientClass."CPhysBox"]
-	address = 0x1755d48
-	size = 2624
-[ClientClass."CPhysicsProp"]
-	address = 0x1757d08
-	size = 4992
-[ClientClass."CPlayer"]
-	address = 0x1752ae8
-	size = 15872
-[ClientClass."CPlayerDecoy"]
-	address = 0x19e93b8
-	size = 4928
-[ClientClass."CPlayerResource"]
-	address = 0x1757c68
-	size = 12416
-[ClientClass."CPlayerTasklist"]
-	address = 0x18df198
-	size = 3968
-[ClientClass."CPlayerVehicle"]
-	address = 0x1820c68
-	size = 4864
-[ClientClass."CPlayerWaypoint"]
-	address = 0x18deca8
-	size = 3328
-[ClientClass."CPointCamera"]
-	address = 0x1756558
-	size = 2752
-[ClientClass."CPortal_PointPush"]
-	address = 0x1f66408
-	size = 2624
-[ClientClass."CPostProcessController"]
-	address = 0x1752688
-	size = 2624
-[ClientClass."CPredictedFirstPersonProxy"]
-	address = 0x1f73878
-	size = 4928
-[ClientClass."CProjectile"]
-	address = 0x1f6e148
-	size = 9920
-[ClientClass."CPropDoor"]
-	address = 0x18d9338
-	size = 5120
-[ClientClass."CPropSurvival"]
-	address = 0x1755858
-	size = 4864
-[ClientClass."CRopeKeyframe"]
-	address = 0x18dd9c8
-	size = 3840
-[ClientClass."CScriptMover"]
-	address = 0x18e9168
-	size = 5312
-[ClientClass."CScriptNetData"]
-	address = 0x18e1ee8
-	size = 3136
-[ClientClass."CScriptNetDataGlobal"]
-	address = 0x18de278
-	size = 3392
-[ClientClass."CScriptNetData_SNDC_GLOBAL"]
-	address = 0x18dee88
-	size = 3392
-[ClientClass."CScriptNetData_SNDC_PLAYER_EXCLUSIVE"]
-	address = 0x18de988
-	size = 3328
-[ClientClass."CScriptNetData_SNDC_PLAYER_GLOBAL"]
-	address = 0x18de348
-	size = 3328
-[ClientClass."CScriptNetData_SNDC_TITAN_SOUL"]
-	address = 0x18df058
-	size = 3264
-[ClientClass."CScriptProp"]
-	address = 0x1755178
-	size = 5120
-[ClientClass."CScriptTraceVolume"]
-	address = 0x1f6e038
-	size = 2624
-[ClientClass."CShieldProp"]
-	address = 0x1751d28
-	size = 4992
-[ClientClass."CSkyCamera"]
-	address = 0x1757f58
-	size = 2560
-[ClientClass."CSpotlightEnd"]
-	address = 0x175bb48
-	size = 2624
-[ClientClass."CSprite"]
-	address = 0x18ddf88
-	size = 2688
-[ClientClass."CSpriteOriented"]
-	address = 0x18df4a8
-	size = 2688
-[ClientClass."CStatueProp"]
-	address = 0x17587f8
-	size = 5056
-[ClientClass."CStatusEffectPlugin"]
-	address = 0x18df368
-	size = 2624
-[ClientClass."CTEBaseBeam"]
-	address = 0x175ca48
-	size = 104
-[ClientClass."CTEBeamEntPoint"]
-	address = 0x1820f78
-	size = 136
-[ClientClass."CTEBeamEnts"]
-	address = 0x175deb8
-	size = 112
-[ClientClass."CTEBeamFollow"]
-	address = 0x1858bb8
-	size = 112
-[ClientClass."CTEBeamLaser"]
-	address = 0x18579c8
-	size = 112
-[ClientClass."CTEBeamPoints"]
-	address = 0x1859f88
-	size = 128
-[ClientClass."CTEBeamRing"]
-	address = 0x18219c8
-	size = 112
-[ClientClass."CTEBeamRingPoint"]
-	address = 0x175fd48
-	size = 128
-[ClientClass."CTEBeamSpline"]
-	address = 0x18213c8
-	size = 240
-[ClientClass."CTEBreakModel"]
-	address = 0x1820d08
-	size = 112
-[ClientClass."CTEEffectDispatch"]
-	address = 0x175c5e8
-	size = 184
-[ClientClass."CTEExplosion"]
-	address = 0x175c0e8
-	size = 136
-[ClientClass."CTEGibEvent"]
-	address = 0x1757bf8
-	size = 56
-[ClientClass."CTEParticleSystem"]
-	address = 0x18216c8
-	size = 56
-[ClientClass."CTEPhysicsProp"]
-	address = 0x175d6a8
-	size = 96
-[ClientClass."CTEProjectileTrail"]
-	address = 0x1f74f78
-	size = 88
-[ClientClass."CTEScriptParticleSystem"]
-	address = 0x18da698
-	size = 80
-[ClientClass."CTEScriptParticleSystemOnEntity"]
-	address = 0x18da5f8
-	size = 64
-[ClientClass."CTEScriptParticleSystemOnEntityWithPos"]
-	address = 0x18dcbb8
-	size = 88
-[ClientClass."CTEShatterSurface"]
-	address = 0x1821508
-	size = 120
-[ClientClass."CTESoundDispatch"]
-	address = 0x175baa8
-	size = 72
-[ClientClass."CTeam"]
-	address = 0x1821888
-	size = 2944
-[ClientClass."CTitanSoul"]
-	address = 0x17548b8
-	size = 3456
-[ClientClass."CTriggerCylinderHeavy"]
-	address = 0x18de3e8
-	size = 2752
-[ClientClass."CTriggerNoGrapple"]
-	address = 0x175bdc8
-	size = 2688
-[ClientClass."CTriggerNoZipline"]
-	address = 0x1821468
-	size = 2688
-[ClientClass."CTriggerPlayerMovement"]
-	address = 0x18e8c68
-	size = 2752
-[ClientClass."CTriggerPointGravity"]
-	address = 0x18df238
-	size = 2752
-[ClientClass."CTriggerSlip"]
-	address = 0x18dea28
-	size = 2752
-[ClientClass."CTurret"]
-	address = 0x1f74a78
-	size = 6144
-[ClientClass."CVGuiScreen"]
-	address = 0x1821cc8
-	size = 2816
-[ClientClass."CVortexSphere"]
-	address = 0x1f82d88
-	size = 2688
-[ClientClass."CWaterLODControl"]
-	address = 0x17600b8
-	size = 2624
-[ClientClass."CWeaponX"]
-	address = 0x1f75098
-	size = 13696
-[ClientClass."CWorld"]
-	address = 0x1821b88
-	size = 2816
-[ClientClass."CZipline"]
-	address = 0x1f73918
-	size = 4096
-[ClientClass."CZiplineEnd"]
-	address = 0x1f71ef8
-	size = 2624
-[ClientClass."DoorMover"]
-	address = 0x18ddee8
-	size = 5376
-[ClientClass."ScriptMoverLightweight"]
-	address = 0x18e7a98
-	size = 5376
-[ClientClass."Titan_Cockpit"]
-	address = 0x1f6b0a8
-	size = 5440
-[ConVar.""]
-	address = 0x28ab020
-	flags = 0x0
-	default_value = "1.0"
+All commands with the flag 0x4000 are EAC bannable.
+I believe the commands that begin with AI do not work as well.
+
 [ConVar."Allow_auto_Party"]
 	address = 0x18da450
 	flags = 0x0
@@ -441,10 +16,6 @@ https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout
 	address = 0x1747100
 	flags = 0x2000
 	default_value = "2"
-[ConVar."CTeam_DontSave"]
-	address = 0x27ff890
-	flags = 0x0
-	default_value = "1"
 [ConVar."DoorSoundPrefixDouble"]
 	address = 0x23d0280
 	description = "Sound prefix for door sounds for double doors"
@@ -455,10 +26,6 @@ https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout
 	description = "Sound prefix for door sounds for single doors"
 	flags = 0x0
 	default_value = "Door_Single_"
-[ConVar."ScriptDisallowedToUsePersistenceOnSP"]
-	address = 0x23e96f0
-	flags = 0x2000
-	default_value = "0"
 [ConVar."ScriptSaveAllowed"]
 	address = 0x23dcbe0
 	flags = 0x2000
@@ -467,651 +34,6 @@ https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout
 	address = 0x175e650
 	flags = 0x0
 	default_value = "0"
-[ConVar."TalkIsStream"]
-	address = 0x175edd0
-	flags = 0x80
-	default_value = "0"
-[ConVar."When set to 0, player always returns false when asked if it has a vehicle"]
-	address = 0x2376090
-	flags = 0x2002
-	default_value = "1"
-[ConVar."When set to 0, player always returns false when asked if it has a vehicle"]
-	address = 0x23d9670
-	flags = 0x2002
-	default_value = "1"
-[ConVar."ai_ainRebuildOnMapStart"]
-	address = 0x23f35a0
-	description = "Values >= 1 means the game will build the .ain file when the map loads. Value 1 means this ConVar will reset to 0 after building. Value 2 means this ConVar will NOT reset after building"
-	flags = 0x2
-	default_value = "0"
-[ConVar."ai_ain_crc_debug"]
-	address = 0x23f7680
-	flags = 0x2
-	default_value = "0"
-[ConVar."ai_anim_overlay_debug"]
-	address = 0x23fafd0
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_auto_contact_solver"]
-	address = 0x23f5000
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_choose_new_enemy_max_time"]
-	address = 0x23f5cd0
-	description = "The maximum amount of seconds that can pass before an AI must attempt to choose a new enemy"
-	flags = 0x0
-	default_value = "1.5"
-[ConVar."ai_cloaked_enemy_free_knowledge_duration"]
-	address = 0x23f9180
-	flags = 0x4000
-	default_value = "0.6"
-[ConVar."ai_cluster_select"]
-	address = 0x23f8f90
-	flags = 0x0
-	default_value = "-1"
-[ConVar."ai_collide_other_ai"]
-	address = 0x23fab90
-	flags = 0x4000
-	default_value = "1"
-[ConVar."ai_current_enemy_bonus"]
-	address = 0x23f5b90
-	description = "The AI\'s current enemy is given a bonus distance heuristic so that he is likely to pick them again"
-	flags = 0x0
-	default_value = "15"
-[ConVar."ai_debug_corpse"]
-	address = 0x23ef700
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_directnavprobe"]
-	address = 0x23f5e80
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_doors"]
-	address = 0x23f5120
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_draw_depth_test"]
-	address = 0x23f3760
-	description = "Toggle depth test for some AI debug draw functionality"
-	flags = 0x82
-	default_value = "1"
-[ConVar."ai_debug_draw_nav_dist"]
-	address = 0x23f16d0
-	flags = 0x0
-	default_value = "1024"
-[ConVar."ai_debug_dyninteractions"]
-	address = 0x23f5c30
-	description = "Debug the NPC dynamic interaction system."
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_efficiency"]
-	address = 0x23f9eb0
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_enemies"]
-	address = 0x23ef520
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_enemy_memory"]
-	address = 0x23f38a0
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_engagement_dist"]
-	address = 0x23f7b20
-	flags = 0x2
-	default_value = "0"
-[ConVar."ai_debug_follow"]
-	address = 0x23f3150
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_info_node_spectre"]
-	address = 0x23f0b80
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_los"]
-	address = 0x23f7940
-	description = "NPC Line-Of-Sight debug mode. If 1, solid entities that block NPC LOC will be highlighted with white bounding boxes. If 2, it\'ll show non-solid entities that would do it if they were solid."
-	flags = 0x4004
-	default_value = "0"
-[ConVar."ai_debug_move_script"]
-	address = 0x23f6bd0
-	flags = 0x2
-	default_value = "0"
-[ConVar."ai_debug_move_transitions"]
-	address = 0x23f5a50
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_nodes"]
-	address = 0x23fa820
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_debug_obstacle_avoid"]
-	address = 0x23f4d00
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_pieoff"]
-	address = 0x23f6300
-	flags = 0x2
-	default_value = "0"
-[ConVar."ai_debug_poseparameters"]
-	address = 0x23ebfa0
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_savePosition"]
-	address = 0x23f49f0
-	flags = 0x0
-	default_value = ""
-[ConVar."ai_debug_search_paths"]
-	address = 0x23f5910
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_shoot_positions"]
-	address = 0x2822430
-	flags = 0x0
-	default_value = "-1"
-[ConVar."ai_debug_squads"]
-	address = 0x23f69f0
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_stats"]
-	address = 0x23f0fe0
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_test_anim_path"]
-	address = 0x23f6170
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_debug_think_ticks"]
-	address = 0x23f5550
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_default_efficient"]
-	address = 0x23f1770
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_default_free_knowledge_dist"]
-	address = 0x23f1ba0
-	flags = 0x4000
-	default_value = "512"
-[ConVar."ai_default_free_knowledge_duration"]
-	address = 0x23f5f20
-	flags = 0x4000
-	default_value = "1.0"
-[ConVar."ai_disable_task_announce_attack"]
-	address = 0x23f96c0
-	flags = 0x2
-	default_value = "1"
-[ConVar."ai_draw_motor_movement"]
-	address = 0x23f75e0
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_efficiency_override"]
-	address = 0x23ec630
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_enable_corpse_manager"]
-	address = 0x23ef050
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_excluded_clusters"]
-	address = 0x23f0cc0
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_follow_use_points"]
-	address = 0x23ef3e0
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_follow_use_points_when_moving"]
-	address = 0x23f6030
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_frametime_limit"]
-	address = 0x23f7c60
-	description = "frametime limit for min efficiency AIE_NORMAL (in sec\'s)."
-	flags = 0x0
-	default_value = "50"
-[ConVar."ai_grenade_default_weapon"]
-	address = 0x23f0c20
-	flags = 0x0
-	default_value = ""
-[ConVar."ai_grenade_enabled"]
-	address = 0x23f6a90
-	description = "Allow AI to throw grenades"
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_grenade_forced_weapon"]
-	address = 0x23f2ad0
-	flags = 0x0
-	default_value = ""
-[ConVar."ai_grenade_fuse_time"]
-	address = 0x23eed00
-	flags = 0x0
-	default_value = "2"
-[ConVar."ai_grenade_initial_contact_delay"]
-	address = 0x23f3500
-	description = "When an AI first sees an enemy it must wait this long before possibly throwing a grenade at them"
-	flags = 0x0
-	default_value = "10"
-[ConVar."ai_grenade_max_throw_speed"]
-	address = 0x23f0570
-	flags = 0x0
-	default_value = "5000"
-[ConVar."ai_grenade_target_debounce_default"]
-	address = 0x23ec6d0
-	description = "Whenever a grenade is thrown at an entity, how long before another grenade can be thrown at them again"
-	flags = 0x0
-	default_value = "22"
-[ConVar."ai_grenade_target_horizontal_offset"]
-	address = 0x23f6620
-	flags = 0x0
-	default_value = "15"
-[ConVar."ai_grenade_target_variance_dist_scalar"]
-	address = 0x23f1a60
-	flags = 0x0
-	default_value = "0.03"
-[ConVar."ai_grenade_target_variance_min"]
-	address = 0x23efdf0
-	flags = 0x0
-	default_value = "8"
-[ConVar."ai_grenade_throw_debounce"]
-	address = 0x23eefb0
-	description = "After an AI throws a grenade, how long until it can throw another one"
-	flags = 0x0
-	default_value = "15"
-[ConVar."ai_local_step_size"]
-	address = 0x23f9030
-	flags = 0x0
-	default_value = "1024"
-[ConVar."ai_max_corpse_detect_dist"]
-	address = 0x23f6b30
-	flags = 0x0
-	default_value = "1024"
-[ConVar."ai_max_look_at_friendly_dist"]
-	address = 0x23f66c0
-	flags = 0x0
-	default_value = "512"
-[ConVar."ai_max_node_drop"]
-	address = 0x23f7fb0
-	flags = 0x0
-	default_value = "2048"
-[ConVar."ai_max_triangulation_attempts"]
-	address = 0x23f5260
-	flags = 0x0
-	default_value = "2"
-[ConVar."ai_max_triangulation_dist"]
-	address = 0x23fa780
-	flags = 0x0
-	default_value = "384"
-[ConVar."ai_melee_debug"]
-	address = 0x23f9360
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_melee_kill_sound_radius"]
-	address = 0x23f7720
-	flags = 0x0
-	default_value = "250"
-[ConVar."ai_min_signal_dist"]
-	address = 0x23f5af0
-	flags = 0x0
-	default_value = "512"
-[ConVar."ai_missFastPlayer_sideWindowYMax"]
-	address = 0x23ecaa0
-	flags = 0x0
-	default_value = "80"
-[ConVar."ai_missFastPlayer_sideWindowYMin"]
-	address = 0x23f8300
-	flags = 0x0
-	default_value = "30"
-[ConVar."ai_missFastPlayer_sideWindowZMax"]
-	address = 0x23f4810
-	flags = 0x0
-	default_value = "80"
-[ConVar."ai_missFastPlayer_sideWindowZMin"]
-	address = 0x23f5410
-	flags = 0x0
-	default_value = "-20"
-[ConVar."ai_missFastPlayer_topWindowYMax"]
-	address = 0x23f2a30
-	flags = 0x0
-	default_value = "50"
-[ConVar."ai_missFastPlayer_topWindowYMin"]
-	address = 0x23f3280
-	flags = 0x0
-	default_value = "-50"
-[ConVar."ai_missFastPlayer_topWindowZMax"]
-	address = 0x23ecbe0
-	flags = 0x0
-	default_value = "40"
-[ConVar."ai_missFastPlayer_topWindowZMin"]
-	address = 0x23f87e0
-	flags = 0x0
-	default_value = "20"
-[ConVar."ai_move_do_short_probe"]
-	address = 0x23ec1a0
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_move_probe_delay"]
-	address = 0x23f19c0
-	flags = 0x0
-	default_value = "0.25"
-[ConVar."ai_move_sanity_check"]
-	address = 0x23f6760
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_moveprobe_debug"]
-	address = 0x23ef660
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_moveprobe_jump_debug"]
-	address = 0x23f7e40
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_navigator_generate_spikes"]
-	address = 0x23f0e00
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_navigator_generate_spikes_strength"]
-	address = 0x23f79e0
-	flags = 0x0
-	default_value = "8"
-[ConVar."ai_near_node_for_hull_box_extent"]
-	address = 0x23f18b0
-	flags = 0x2
-	default_value = "800"
-[ConVar."ai_no_local_ground_paths"]
-	address = 0x23f51c0
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_no_local_paths"]
-	address = 0x23ef340
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_no_node_cache"]
-	address = 0x23ec3e0
-	flags = 0x2
-	default_value = "0"
-[ConVar."ai_no_select_box"]
-	address = 0x23f95b0
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_no_steer"]
-	address = 0x23f07f0
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_node_draw_safety"]
-	address = 0x23f6440
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_node_select"]
-	address = 0x23ed0a0
-	flags = 0x0
-	default_value = "-1"
-[ConVar."ai_pain_death_sound_radius"]
-	address = 0x23f8580
-	flags = 0x0
-	default_value = "250"
-[ConVar."ai_pain_on_repeat_damage_threshold"]
-	address = 0x23f1810
-	flags = 0x0
-	default_value = "0.5"
-[ConVar."ai_pain_on_repeated_damage"]
-	address = 0x23f4000
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_path_adjust_speed_on_immediate_turns"]
-	address = 0x23ed140
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_path_dangerous_cluster_cost_scalar"]
-	address = 0x23f04d0
-	description = "When cluster path finding the given cost of a cluster will be incremented by: its absolute danger time remaining multiplied by this value. Larger values = More avoidance of dangerous clusters"
-	flags = 0x0
-	default_value = "70"
-[ConVar."ai_path_dangerous_cluster_death_time_inc"]
-	address = 0x23f3f60
-	description = "When an AI dies it increments danger expiration time on the cluster it is near by X. More deaths = longer time"
-	flags = 0x0
-	default_value = "35.0"
-[ConVar."ai_path_dangerous_cluster_exclude_dist"]
-	address = 0x23ee6b0
-	description = "Maximum distance threshold between AI\'s start cluster and candidate cluster X, for cluster X to use any danger related logic"
-	flags = 0x0
-	default_value = "2200"
-[ConVar."ai_path_dangerous_cluster_look_ahead"]
-	address = 0x23eec60
-	description = "How many clusters an AI should examine ahead in its current path to look for dangerous clusters. AI will attempt to avoid one if it is found."
-	flags = 0x0
-	default_value = "2"
-[ConVar."ai_path_dangerous_cluster_min_time"]
-	address = 0x23f3b10
-	description = "The minimum amount of danger time left for a cluster to be considered dangerous"
-	flags = 0x0
-	default_value = "40"
-[ConVar."ai_path_insert_pause_at_est_end"]
-	address = 0x23f3bb0
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_path_insert_pause_at_obstruction"]
-	address = 0x23f77c0
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_physics_shadow"]
-	address = 0x23f5370
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_pos_debug"]
-	address = 0x23f0d60
-	flags = 0x0
-	default_value = "-1"
-[ConVar."ai_radial_max_link_dist"]
-	address = 0x23f33c0
-	flags = 0x0
-	default_value = "512"
-[ConVar."ai_range_attack_twitch_debounce"]
-	address = 0x23fac30
-	flags = 0x0
-	default_value = "6"
-[ConVar."ai_react_far_dist"]
-	address = 0x23ecd20
-	flags = 0x0
-	default_value = "2000"
-[ConVar."ai_reasonable_facing_min_dist"]
-	address = 0x23f3460
-	flags = 0x0
-	default_value = "120"
-[ConVar."ai_rebalance_thinks"]
-	address = 0x23efcb0
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_recent_enemy_damage_dist_bonus"]
-	address = 0x23ec240
-	description = "AI will given distance bonus priority to enemies who have attacked them recently when they are picking a best enemy"
-	flags = 0x0
-	default_value = "1000"
-[ConVar."ai_recent_enemy_damage_expire_time"]
-	address = 0x23f1b00
-	description = "AI will given distance bonus priority to enemies who have attacked them recently when they are picking a best enemy"
-	flags = 0x0
-	default_value = "3.0"
-[ConVar."ai_require_pvs"]
-	address = 0x23ebdc0
-	flags = 0x4000
-	default_value = "0"
-[ConVar."ai_route_simplify_interval"]
-	address = 0x23f80f0
-	flags = 0x0
-	default_value = "0.5"
-[ConVar."ai_run_from_enemy_try_shoot_chance"]
-	address = 0x2824600
-	description = "Chance of AI that needs to run away taking a few shots at enemy before running"
-	flags = 0x4000
-	default_value = "60"
-[ConVar."ai_schedule_reset_conditions_on_gather"]
-	address = 0x23fad70
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_schedule_selector_debug"]
-	address = 0x23ef160
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_script_assault_points_validation_debug"]
-	address = 0x23f3320
-	flags = 0x0
-	default_value = "30"
-[ConVar."ai_script_nodes_draw"]
-	address = 0x23ef480
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_shot_bias"]
-	address = 0x23f0ae0
-	flags = 0x0
-	default_value = "1.0"
-[ConVar."ai_shot_stats_term"]
-	address = 0x23f94a0
-	flags = 0x0
-	default_value = "100"
-[ConVar."ai_show_hull_attacks"]
-	address = 0x23f8e50
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_show_path_search_nodes"]
-	address = 0x23eeda0
-	flags = 0x2
-	default_value = "0"
-[ConVar."ai_show_think_tolerance"]
-	address = 0x23f6950
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_sight_npc_search_time"]
-	address = 0x23f48b0
-	description = "How often AI look for other NPC enemies"
-	flags = 0x4000
-	default_value = "0.45"
-[ConVar."ai_simplify_path_dist"]
-	address = 0x23f68b0
-	flags = 0x0
-	default_value = "1024"
-[ConVar."ai_simplify_path_quick_dist"]
-	address = 0x23fa640
-	flags = 0x0
-	default_value = "1024"
-[ConVar."ai_solid_spawn_script_error"]
-	address = 0x23f0610
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_sprint_min_enemy_dist"]
-	address = 0x23f8190
-	description = "Don\'t sprint if enemy is within this distance"
-	flags = 0x0
-	default_value = "256"
-[ConVar."ai_squad_cache_path_max_dest_diff"]
-	address = 0x23f78a0
-	flags = 0x0
-	default_value = "1500"
-[ConVar."ai_squad_cache_path_max_start_diff"]
-	address = 0x23f0f40
-	flags = 0x0
-	default_value = "1000"
-[ConVar."ai_squad_clear_assigned_node_time"]
-	address = 0x23f54b0
-	flags = 0x0
-	default_value = "5"
-[ConVar."ai_squad_enemy_notify_delay"]
-	address = 0x23f7ee0
-	flags = 0x0
-	default_value = "0.7"
-[ConVar."ai_squad_keep_dist_increment"]
-	address = 0x23f3800
-	flags = 0x0
-	default_value = "800"
-[ConVar."ai_squad_keep_dist_start"]
-	address = 0x23f9ff0
-	flags = 0x0
-	default_value = "1200"
-[ConVar."ai_squad_min_cache_path_length"]
-	address = 0x23f83a0
-	flags = 0x0
-	default_value = "1500"
-[ConVar."ai_squad_min_salute_interval"]
-	address = 0x23f28c0
-	description = "AI squad will not salute friendly player more frequently than this"
-	flags = 0x4000
-	default_value = "20"
-[ConVar."ai_squad_move_spread_factor"]
-	address = 0x23f9f50
-	description = "Allow this times hull width from squad centroid before slowing down or speeding up members"
-	flags = 0x4000
-	default_value = "10"
-[ConVar."ai_squad_num_LOFs"]
-	address = 0x23ecb40
-	flags = 0x0
-	default_value = "2"
-[ConVar."ai_squad_num_chasers"]
-	address = 0x23fa6e0
-	flags = 0x0
-	default_value = "2"
-[ConVar."ai_squad_stay_close_radius"]
-	address = 0x23f59b0
-	flags = 0x0
-	default_value = "500"
-[ConVar."ai_stepsize"]
-	address = 0x23ec520
-	flags = 0x2102
-	default_value = "18"
-[ConVar."ai_strong_optimizations"]
-	address = 0x23f63a0
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_strong_optimizations_no_checkstand"]
-	address = 0x23f9220
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_team_enemy_notify_interval"]
-	address = 0x23f2820
-	description = "Interval for notifying teammates of my current enemy. Should be more than ai_squad_enemy_notify_delay"
-	flags = 0x0
-	default_value = "3.0"
-[ConVar."ai_team_enemy_notify_max_dist"]
-	address = 0x23f4bf0
-	description = "maximum distance for notifying teammates about enemies"
-	flags = 0x0
-	default_value = "3000"
-[ConVar."ai_test_hull_model_name"]
-	address = 0x23ece40
-	flags = 0x0
-	default_value = "mdl/robots/drone_frag/drone_frag.rmdl"
-[ConVar."ai_threaded_post_process_is_delayed"]
-	address = 0x23faf30
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_titan_grapple_max_len"]
-	address = 0x28235b0
-	flags = 0x2000
-	default_value = "3000"
-[ConVar."ai_use_cached_squad_paths"]
-	address = 0x23f90d0
-	flags = 0x2
-	default_value = "1"
-[ConVar."ai_use_clipped_paths"]
-	address = 0x23f8ef0
-	flags = 0x0
-	default_value = "0"
-[ConVar."ai_use_cluster_path"]
-	address = 0x23f6580
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_use_efficiency"]
-	address = 0x23f8260
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_use_frame_think_limits"]
-	address = 0x23f6d10
-	flags = 0x0
-	default_value = "1"
-[ConVar."ai_use_think_optimizations"]
-	address = 0x23f06b0
-	flags = 0x0
-	default_value = "1"
 [ConVar."airslowmo_enabled"]
 	address = 0x23d1270
 	description = "Enables air slowmo"
@@ -13990,10 +12912,6 @@ https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout
 [ConCommand."+ping"]
 	flags = 0x20000
 	callback = 0x78db60
-[ConCommand."+posedebug"]
-	description = "Turn on pose debugger or add ents to pose debugger UI"
-	flags = 0x4000
-	callback = 0x989170
 [ConCommand."+pushtotalk"]
 	flags = 0x0
 	callback = 0x2f8030
@@ -14204,10 +13122,6 @@ https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout
 [ConCommand."-ping"]
 	flags = 0x20000
 	callback = 0x78dbe0
-[ConCommand."-posedebug"]
-	description = "Turn off pose debugger or hide ents from pose debugger UI"
-	flags = 0x4000
-	callback = 0x989280
 [ConCommand."-pushtotalk"]
 	flags = 0x0
 	callback = 0x2f80c0
@@ -14321,22 +13235,6 @@ https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout
 	description = "Reloads aimassist config files."
 	flags = 0x8
 	callback = 0x645ee0
-[ConCommand."Test_InitRandomEntitySpawner"]
-	flags = 0x4004
-	callback = 0xf4b6f0
-[ConCommand."Test_RandomizeInPVS"]
-	flags = 0x4004
-	callback = 0xf4bb50
-[ConCommand."Test_RemoveAllRandomEntities"]
-	flags = 0x4004
-	callback = 0xf4bd10
-[ConCommand."Test_SpawnRandomEntities"]
-	flags = 0x4004
-	callback = 0xf4b930
-[ConCommand."_setClassVarServer"]
-	description = "Set a class var on the server"
-	flags = 0x4006
-	callback = 0xc748b0
 [ConCommand."adminmsg"]
 	description = "Send text to the current community (if you are an admin)"
 	flags = 0x0
@@ -14352,10 +13250,6 @@ https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout
 	description = "Set how high AI bumps up ground walkers when checking steps"
 	flags = 0x4
 	callback = 0xd89f10
-[ConCommand."air_density"]
-	description = "Changes the density of air for drag computations."
-	flags = 0x4004
-	callback = 0x1f2410
 [ConCommand."aisettings_reparse"]
 	description = "Reloads the AI settings files"
 	flags = 0x6
@@ -14428,21 +13322,10 @@ https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout
 	description = "cache_print_summary [section]\nPrint out a summary contents of cache memory."
 	flags = 0x2
 	callback = 0x2889c0
-[ConCommand."cam_command"]
-	description = "Tells camera to change modes"
-	flags = 0x4008
-	callback = 0x787b20
+
 [ConCommand."cancelselect"]
 	flags = 0x10000000
 	callback = 0x78bb40
-[ConCommand."cast_hull"]
-	description = "Tests hull collision detection"
-	flags = 0x4004
-	callback = 0xe5ef20
-[ConCommand."cast_ray"]
-	description = "Tests collision detection"
-	flags = 0x4004
-	callback = 0xe5eb70
 [ConCommand."cc_emit"]
 	description = "Emits a closed caption"
 	flags = 0x8
@@ -15512,17 +14395,10 @@ https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout
 	description = "Plays a video at position using coordinates scaled relative to the base screen resolution: <filename> [pinPos posX posY width height]"
 	flags = 0x8
 	callback = 0x7e3c10
-[ConCommand."print_colorcorrection"]
-	description = "Display the color correction layer information."
-	flags = 0x4000
-	callback = 0x1f2410
 [ConCommand."progress_enable"]
 	flags = 0x0
 	callback = 0x2d3d10
-[ConCommand."prop_debug"]
-	description = "Toggle prop debug mode. If on, props will show colorcoded bounding boxes. Red means ignore all damage. White means respond physically to damage but never break. Green maps health in the range of 100 down to 1."
-	flags = 0x4004
-	callback = 0xf21820
+
 [ConCommand."quit"]
 	description = "Exit the engine."
 	flags = 0x0
@@ -15533,10 +14409,6 @@ https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout
 [ConCommand."r_cheapwaterstart"]
 	flags = 0x8
 	callback = 0x7ea480
-[ConCommand."r_cleardecals"]
-	description = "Usage r_cleardecals <permanent>."
-	flags = 0x40000000
-	callback = 0x271580
 [ConCommand."r_dxgi_max_frame_latency"]
 	description = "Set the max number of command buffers in flight. 0 will set it to the DXGI default of 3. Make sure you are not forcing \"Maximum pre-rendered frames\" in the driver settings, but leave it application controlled."
 	flags = 0x0
@@ -15555,10 +14427,6 @@ https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout
 	description = "Ask your server to recheck your community"
 	flags = 0x10000000
 	callback = 0x286960
-[ConCommand."recompute_speed"]
-	description = "Recomputes clock speed (for debugging purposes)."
-	flags = 0x4000
-	callback = 0x278450
 [ConCommand."reload"]
 	description = "Reload the game (add setpos to jump to current view position on reload)."
 	flags = 0x2
@@ -15567,10 +14435,6 @@ https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout
 	description = "Reloads all the localization data files"
 	flags = 0x0
 	callback = 0x32d8c0
-[ConCommand."reload_script_callbacks"]
-	description = "Reloads script callback function pointers for client and server."
-	flags = 0x4008
-	callback = 0x95a560
 [ConCommand."reload_script_callbacks_server"]
 	description = "Reloads script callback function pointers for server."
 	flags = 0x4014
@@ -15675,357 +14539,184 @@ https://raw.githubusercontent.com/diablo/ApexLegendsResearch/master/Cvars/stdout
 	description = "Set the sp text for the load sreen. This is cleared to the default after each load."
 	flags = 0x20000
 	callback = 0x287c00
-[ConCommand."setinfo"]
-	description = "Adds a new user info value"
-	flags = 0x40000000
-	callback = 0x31a460
 [ConCommand."settype"]
 	description = "Sets a type for a Convar/ConCommand. This affects UI rendering for the convar. Examples: \'text\', \'bool\', \'int 0 10\', \'float 0.0 100.0\', \'enum apple orange banana\'. Move these to code eventually."
-	flags = 0x0
-	callback = 0x25a620
-[ConCommand."shake"]
-	description = "Shake the screen."
-	flags = 0x4004
-	callback = 0xe743a0
-[ConCommand."shake_ropes"]
-	description = "Shakes ropes around the player."
-	flags = 0x4004
-	callback = 0xf35960
-[ConCommand."shake_stop"]
-	description = "Stops all active screen shakes.\n"
-	flags = 0x4000
-	callback = 0x8022f0
-[ConCommand."shake_testpunch"]
-	description = "Test a punch-style screen shake.\n"
-	flags = 0x4000
-	callback = 0x802300
+
 [ConCommand."show_loading_progress"]
 	description = "Prints all debug information regarding the state of the loading progress."
-	flags = 0x0
-	callback = 0x287d30
+
 [ConCommand."showpanel"]
 	description = "Shows a viewport panel <name>"
-	flags = 0x8
-	callback = 0xae4880
-[ConCommand."showtriggers_toggle"]
-	description = "Toggle show triggers"
-	flags = 0x4004
-	callback = 0xf54620
+
 [ConCommand."showvideos"]
 	description = "Makes video panels playing to the screen visible (if they were hidden)"
-	flags = 0x8
-	callback = 0x7e42d0
+
 [ConCommand."silentconnect"]
 	description = "Silently connect to specified server, without disconnecting from our current server unless it succeeds."
-	flags = 0x20000
-	callback = 0x3168d0
+
 [ConCommand."skill_writeTrainingData"]
 	description = "Write training gauntlet skill data"
-	flags = 0x4
-	callback = 0x2e28b0
-[ConCommand."skybox_swap"]
-	description = "Swap through the skyboxes in our queue"
-	flags = 0x4004
-	callback = 0xf35fa0
+
 [ConCommand."snapshot_memory_report"]
 	description = "Prints information about memory usage of snapshot data structures"
-	flags = 0x20004
-	callback = 0x1f2410
-[ConCommand."soundscape_dumpclient"]
-	description = "Dumps the client\'s soundscape data.\n"
-	flags = 0x4000
-	callback = 0x1f2410
+
 [ConCommand."soundscape_flush"]
 	description = "Flushes the server & client side soundscapes"
-	flags = 0x4
-	callback = 0xf39b20
-[ConCommand."spawn_as_pilot"]
-	description = "Spawn as Pilot"
-	flags = 0x0
-	callback = 0x1f2410
-[ConCommand."spawn_as_titan"]
-	description = "Spawn as Titan"
-	flags = 0x0
-	callback = 0x1f2410
+
 [ConCommand."ss_map"]
 	description = "Start playing on specified map with max allowed splitscreen players."
-	flags = 0x20000
-	callback = 0x287d80
+
 [ConCommand."ss_reloadletterbox"]
 	description = "ss_reloadletterbox"
-	flags = 0x8
-	callback = 0x7db7a0
+
 [ConCommand."sssss_enable"]
 	description = "Enable screen-space subsurface scattering."
-	flags = 0x8
-	callback = 0x7ea580
+
 [ConCommand."star_memory"]
 	description = "Dump memory stats"
-	flags = 0x0
-	callback = 0x2ec560
+
 [ConCommand."startmovie"]
 	description = "Start recording movie frames."
-	flags = 0x20000
-	callback = 0x318890
+
 [ConCommand."status"]
 	description = "Display map and connection status."
-	flags = 0x2
-	callback = 0x286a20
+	
 [ConCommand."steamlink"]
-	flags = 0x0
-	callback = 0x39b340
+
 [ConCommand."steamunlink"]
-	flags = 0x0
-	callback = 0x39b680
+
 [ConCommand."stop_transition_videos_fadeout"]
 	description = "Fades out all transition videos playing to the screen: <time>"
-	flags = 0x8
-	callback = 0x7e4400
-[ConCommand."stopserver"]
-	description = "Stop the server  ( DEDI only )."
-	flags = 0x4004
-	callback = 0xe605b0
-[ConCommand."stopsoundscape"]
-	description = "Stops all soundscape processing and fades current looping sounds"
-	flags = 0x4008
-	callback = 0x1f2410
+
 [ConCommand."stopvideos"]
 	description = "Stops all videos playing to the screen"
-	flags = 0x8
-	callback = 0x7e41c0
+
 [ConCommand."stopvideos_fadeout"]
 	description = "Fades out all videos playing to the screen: <time>"
-	flags = 0x8
-	callback = 0x7e4370
-[ConCommand."surfaceprop"]
-	description = "Reports the surface properties at the cursor"
-	flags = 0x4004
-	callback = 0xea9610
+
 [ConCommand."sv_precacheinfo"]
 	description = "Show precache info."
-	flags = 0x0
-	callback = 0x371890
+
 [ConCommand."sv_showents"]
 	description = "Prints the server entity list"
-	flags = 0x0
-	callback = 0x1f2410
-[ConCommand."sv_shutdown"]
-	description = "Sets the server to shutdown when all games have completed"
-	flags = 0x4004
-	callback = 0x367070
-[ConCommand."sv_soundscape_printdebuginfo"]
-	description = "print soundscapes"
-	flags = 0x4004
-	callback = 0x1f2410
+
 [ConCommand."sv_test_rotated_box"]
-	flags = 0x4
-	callback = 0x10b1a50
+
 [ConCommand."sv_trace_start_solid"]
 	description = "Trace with given parameters and return start solid result"
-	flags = 0x4
-	callback = 0xc33760
+
 [ConCommand."sv_writeSendTableStreamFile"]
-	flags = 0x0
-	callback = 0x367430
-[ConCommand."swap_to_weapon"]
-	description = "uses a weapon in your inventory by name"
-	flags = 0x4004
-	callback = 0x104e990
-[ConCommand."switchPlayerClassActivityMod"]
-	description = "Switches the player\'s class activity modifier to the given string"
-	flags = 0x4006
-	callback = 0xc74a60
-[ConCommand."switchclass"]
-	description = "Change player class: soldier, titan"
-	flags = 0x4006
-	callback = 0xc74820
-[ConCommand."takecurrentammo"]
-	description = "Remove player\'s extra ammo for the current weapon.\n"
-	flags = 0x4004
-	callback = 0xec3c70
-[ConCommand."testCockpitJoltAngles"]
-	flags = 0x8
-	callback = 0x705860
-[ConCommand."testCockpitJoltOrigin"]
-	flags = 0x8
-	callback = 0x7056d0
-[ConCommand."test_entity_blocker"]
-	description = "Test command that drops an entity blocker out in front of the player."
-	flags = 0x4004
-	callback = 0xc09600
-[ConCommand."test_freezeframe"]
-	description = "Test the freeze frame code."
-	flags = 0x4000
-	callback = 0x7ea400
-[ConCommand."test_setteam"]
-	description = "Sets target to the player\'s team."
-	flags = 0x4004
-	callback = 0xe5f2f0
-[ConCommand."testhudanim"]
-	description = "Test a hud element animation.\n\tArguments: <anim name>\n"
-	flags = 0x4008
-	callback = 0x77d6e0
+
 [ConCommand."thread_test_tslist"]
-	flags = 0x0
-	callback = 0x277c20
+
 [ConCommand."thread_test_tsqueue"]
-	flags = 0x0
-	callback = 0x277ce0
-[ConCommand."titan_loadout_select"]
-	description = "Titan loadout select"
-	flags = 0x0
-	callback = 0x1f2410
+
 [ConCommand."toggle"]
 	description = "Toggles a convar on or off, or cycles through a set of values."
-	flags = 0x0
-	callback = 0x25a610
+
 [ConCommand."toggle_inventory"]
 	description = "Toggle the inventory menu"
-	flags = 0x8
-	callback = 0x8139b0
+
 [ConCommand."toggle_map"]
 	description = "Toggle the big map"
-	flags = 0x8
-	callback = 0x8139f0
+
 [ConCommand."trace_capsule"]
 	description = "Trace a capsule through the world and debug draw the result"
-	flags = 0x4
-	callback = 0xc33260
+
 [ConCommand."ui_reloadscheme"]
 	description = "Reloads the resource files for the active UI window"
-	flags = 0x8
-	callback = 0x9b62c0
+
 [ConCommand."uiscript_reset"]
 	description = "Resets all UI script state"
-	flags = 0x0
-	callback = 0x830ae0
+
 [ConCommand."uiscript_resolutionchanged"]
 	description = "Notifies UI script that the resolution has changed"
-	flags = 0x0
-	callback = 0x831220
+
 [ConCommand."unbind"]
 	description = "Unbind a key\'s TAPPED binding."
-	flags = 0x0
-	callback = 0x28c4b0
+
 [ConCommand."unbind_US_standard"]
 	description = "Unbind a key\'s TAPPED binding. Given a key on a standard US keyboard, this function will translate that key to the appropriate key on the user\'s current keyboard and unbind that key."
-	flags = 0x0
-	callback = 0x28c4d0
+
 [ConCommand."unbind_all_gamepad"]
 	description = "Unbinds all gamepad binds"
-	flags = 0x0
-	callback = 0x28c4f0
+
 [ConCommand."unbind_held"]
 	description = "Unbind a key\'s HELD binding."
-	flags = 0x0
-	callback = 0x28c4c0
+
 [ConCommand."unbind_held_US_standard"]
 	description = "Unbind a key\'s HELD binding. Given a key on a standard US keyboard, this function will translate that key to the appropriate key on the user\'s current keyboard and unbind that key."
-	flags = 0x0
-	callback = 0x28c4e0
+
 [ConCommand."unbindall"]
 	description = "Unbind all keys."
-	flags = 0x0
-	callback = 0x28c690
+
 [ConCommand."unbindall_ignoreGamepad"]
 	description = "Unbind all keys, skip gamepad binds."
-	flags = 0x0
-	callback = 0x28c6a0
+
 [ConCommand."unload_level_loadscreen"]
 	description = "Unloads the loadscreen for the current level"
-	flags = 0x0
-	callback = 0x286fb0
+
 [ConCommand."unmuteroom"]
 	description = "Unmute the chatroom"
-	flags = 0x0
-	callback = 0x3ad390
+
 [ConCommand."unpausevideos"]
 	description = "Unpauses all videos playing to the screen"
-	flags = 0x8
-	callback = 0x7e4220
+
 [ConCommand."use_consumable"]
 	description = "Uses a specific consumable"
-	flags = 0x8
-	callback = 0x813af0
+
 [ConCommand."user"]
 	description = "Show user data."
-	flags = 0x0
-	callback = 0x366ae0
+
 [ConCommand."users"]
 	description = "Show user info for players on server."
-	flags = 0x0
-	callback = 0x1f2410
+
 [ConCommand."version"]
 	description = "Print version info string."
-	flags = 0x2
-	callback = 0x1f2410
+
 [ConCommand."vgui_drawtree_clear"]
-	flags = 0x0
-	callback = 0x2dc0d0
+
 [ConCommand."vgui_spew_fonts"]
-	flags = 0x0
-	callback = 0x1f2410
+
 [ConCommand."vgui_togglepanel"]
 	description = "show/hide vgui panel by name."
-	flags = 0x0
-	callback = 0x2d7af0
+
 [ConCommand."voicerecord_toggle"]
-	flags = 0x0
-	callback = 0x288490
+
 [ConCommand."vx_datacache_list"]
 	description = "vx_datacache_list"
-	flags = 0x2
-	callback = 0x2889e0
+
 [ConCommand."vx_model_list"]
 	description = "Dump models to VXConsole"
-	flags = 0x0
-	callback = 0x2a6cd0
+
 [ConCommand."weaponSelectOrdnance"]
-	flags = 0x0
-	callback = 0x78e8d0
+
 [ConCommand."weaponSelectPrimary0"]
-	flags = 0x0
-	callback = 0x798fe0
+
 [ConCommand."weaponSelectPrimary1"]
-	flags = 0x0
-	callback = 0x7990d0
+
 [ConCommand."weaponSelectPrimary2"]
-	flags = 0x0
-	callback = 0x7991c0
+
 [ConCommand."weapon_activity"]
 	description = "Play a custom animation activity on the active weapon."
-	flags = 0x0
-	callback = 0x78ef90
+	
 [ConCommand."weapon_inspect"]
-	flags = 0x0
-	callback = 0x78f0a0
+
 [ConCommand."weapon_list"]
 	description = "Lists all weapons owned by the local player"
-	flags = 0x0
-	callback = 0x69a1b0
-[ConCommand."weapon_reparse"]
-	description = "Reloads the weapon script files"
-	flags = 0x4008
-	callback = 0x962b70
+	
 [ConCommand."xlog_list"]
 	description = "List all xlogs, and various stats"
-	flags = 0x2
-	callback = 0x288a00
+
 [ConCommand."xlog_record"]
 	description = "Start writing log file to disk (including any previously buffered data)"
-	flags = 0x2
-	callback = 0x288a40
+
 [ConCommand."xlog_record_that"]
 	description = "Write buffered data (if any)"
-	flags = 0x2
-	callback = 0x288c20
+	
 [ConCommand."xlog_stop"]
 	description = "Stop writing it to disk. (resume buffering if buffering enabled on log)"
-	flags = 0x2
-	callback = 0x288b30
+	
 [ConCommand."xlook"]
-	flags = 0x0
-	callback = 0x1f2410
+
 [ConCommand."xmove"]
-	flags = 0x0
-	callback = 0x1f2410
