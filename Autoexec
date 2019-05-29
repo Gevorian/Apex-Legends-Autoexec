@@ -47,27 +47,16 @@ staticProp_max_scaled_dist 1500 		//The distance at which static objects will be
 n_usekeyboardsampletime 0 			//On / Off keystroke smoothing parameter, reduces keyboard input delay
 
 //Network commands
-//rate 128000
+//rate 1000000
 //host_limitlocal 1
 //origin_presense_updateRate 10
 //cl_updaterate_mp 100; match_updateRate 100
 //telemetry_client_enable "0"
 //pin_opt_in "0"
-//cl_interp "0"
-//cl_interp_ratio "1"
 //cl_smoothtime "0.01"
 //net_compresspackets "0"
 //net_compresspackets_minsize 128
 //net_maxcleartime 0.020346
-
-//Mouse options
-m_rawinput "1"
-m_filter "0"
-m_customaccel "0"
-m_customaccel_exponent "0"
-m_mouseaccel1 "0"
-m_mouseaccel2 "0"
-m_customaccel_max "0"
 
 //Audio Commands - Most of these are disabled to the recent audio patch, still testing these.
 //miles_occlusion_server_sounds_per_frame "400" //default 60"
@@ -80,32 +69,27 @@ rope_wind_dist 0
 
 //most commands here are for FPS improvements
 bind_US_standard "f12" "exec autoexec" //Press F12 to exec autoexec if not already in launch options
-r_eyegloss "0"
-r_eyemove "0"
-Allowoverbright "1"
+m_acceleration "0"
 cl_always_ragdoll_radius "0"
 cl_bones_incremental_blend "1"
-cl_phys_maxticks "2"
+cl_phys_maxticks "0"
 r_rootlod "2"
-r_threaded_client_shadow_manager 1
-r_ambientfraction ".2"
-cl_ejectbrass 0
+cl_ejectbrass "0"
 cl_showpos "0" 
-cl_threaded_client_leaf_system 1
-cl_smooth 0
-mat_picmip 4
-mat_debug_tonemapping_disable 1 
-mat_sun_highlight_size 0 
-hud_setting_adsDof 0
-mat_bloom_max_lighting_value 0
-mat_parallaxmap 0
-r_PhysPropLighting 0
-r_lightstyle 0
-r_lightmap 0
+cl_smooth "0"
+mat_picmip "4"
+mat_debug_tonemapping_disable "1"
+mat_sun_highlight_size "0"
+hud_setting_adsDof "0"
+mat_bloom_max_lighting_value "0"
+mat_parallaxmap "0"
+r_PhysPropLighting "0"
+r_lightstyle "0"
+r_lightmap "0"
 func_break_max_pieces "0"
 cl_gib_allow "0"
-cl_particle_fallback_base "//1"
-cl_particle_fallback_multiplier "//1"
+cl_particle_fallback_base "-1"
+cl_particle_fallback_multiplier "-1"
 particle_cpu_level "0"
 r_createmodeldecals "0"
 shadow_depth_dimen_min "0"
@@ -114,23 +98,15 @@ shadow_maxdynamic "0"
 ssao_downsample "0"
 mat_vsync_mode "0"
 mat_backbuffer_count "0"
-r_fog "0"
 hud_setting_pingDoubleTapEnemy "1"
-r_WaterDrawReflection 0
-r_drawbatchdecals 0
-mat_diffuse 0
-mat_local_contrast_scale_override 0
-mat_max_worldmesh_vertices "0"
+r_WaterDrawReflection "0"
+r_drawbatchdecals "0"
+mat_local_contrast_scale_override "0"
 mat_maxframelatency "0"
-csm_enableunlock 1
-cl_use_simd_bones 1
-cl_simdbones_slerp 1
-cl_headbob_amp 0
-cl_headbob_freq 0
-mat_norendering 1
+cl_use_simd_bones "1"
+cl_simdbones_slerp "1"
 r_particles_cull_all "0"
-prop_active_gib_limit 0
-hudwarp_override "1"
+prop_active_gib_limit "0"
 dof_overrideParams "0"
 tsaa_blendfactoroverride "1"
 mat_screen_blur_override "1"
@@ -140,13 +116,11 @@ rui_overrideVguiTextRendering "1"
 mat_envmap_scale "1"
 mat_envmapsize "0"
 mat_envmaptgasize "0"
-mat_drawflat "1"
-mat_diffuse "0"
+mat_diffuse "1"
 mat_depthtest_force_disabled "1"
 mat_disable_bloom "1"
 mat_disable_lightmap_ambient "1"
 mat_force_bloom "0"
-mat_fastnobump "1"
 mat_fastspecular "1"
 mat_disable_lightmaps "1"
 mat_disable_lightwarp "1"
@@ -160,10 +134,8 @@ mat_disable_model_ambient "1"
 mat_compressedtextures "1"
 mat_use_compressed_hdr_textures "1"
 mat_bumpmap "0"
-mat_showlowresimage "1" 						//Might cause crashing
 mat_hdr_enabled "0"
 mat_hdr_level "0"
-mat_postprocess_enable "0"
 mat_vignette_enable "0"
 mat_enable_ssr "0"
 mat_fxaa_enable "0"
@@ -173,17 +145,10 @@ mat_shadowstate "0"
 mat_filtertextures "0"							//Filter textures
 mat_depthfeather_enable "0"
 mat_depthbias_tightshadowmap "0"
-mat_disable_dof "1"
 mat_dof_enabled "0"
-mat_dof_max_blur_radius "0"
-mat_dof_quality "0"
-mat_disable_fancy_blending "1"
-mat_displacementmap "0"
 mat_reduceparticles "1"
 mat_instancing "1"
-mat_sky_scale "5"
 mat_colorcorrection_editor "0"
-mat_grain_enable "0"
 mat_antialias "0"
 mat_forceaniso "0"
 mat_screen_blur_enabled "0"
@@ -200,77 +165,33 @@ mat_shadercount "0"							//Forces the game into using multiple threads
 mat_vsync "0"								//Ensure VSync is disabled by default
 mat_hide_sun_in_last_cascade "1"
 mat_antialias_mode "0"
-mat_colorcorrection "0"
-mat_aaquality "0"
-mat_alphacoverage "0"
-mat_software_aa_strength "0"
-mat_software_aa_strength_vgui "0"
-mat_disable_particles "0"
-mat_normalmaps "0"
-mat_normals "0"
-mat_postprocessing_combine "0"
-mat_non_hdr_bloom_scalefactor "0"
-mat_clipz "1"
-mat_viewportscale "1"							//Adjust render resolution
-mat_tonemapping_occlusion_use_stencil "1"
-mat_syncGPU "0" 
-mat_sharpen_amount "0"
+mat_colorcorrection "0" 
+monitor_mat_sharpen_amount "0"
 mat_light_edit "1"
-mat_depthbias_shadowmap "0.00001"
-mat_cloudmaskdef "0"
+mat_depthbias_shadowmap "0"
 mat_filterlightmaps "0"
 mat_picmip "4"
 r_dynamic "0"
-r_fastzreject "1"
-r_decalstaticprops "0"
+r_fastzreject "0"							//Use -1 for Nvida, 0 for AMD
 r_decals "0"
 r_forcecheapwater "1"
 r_waterdrawreflection "0"
 r_waterforceexpensive "0"
 r_waterforcereflectentities "0"
 r_jiggle_bones "0"
-r_shadows "0"
 r_shadowrendertotexture "0"
-r_shadowmaxrendered "0"
 r_rimlight "0"
 r_threaded_particles "1"
 r_updaterefracttexture_allowmultiple "0"
-r_maxdlights "0"							//Determines the maximum number of dynamic lights visible on the screen
 r_volumetric_lighting_enabled "0"
 r_particle_lighting_enable "0"
 r_particle_low_res_enable "1"
-r_occlusion "1"								//Use CPU to have the GPU skip rendering models/props you cannot see
-r_occludeemaxarea "1"							//Skip occlusion of objects that are too large to test for
-r_occluderminarea "10"							//Skip occluders that are too small to block anything
-r_worldlights "0"
-r_3dsky "0"								//Show 3D Backgrounds
-r_renderoverlayfragment"0" 
-r_eyes "0"
-r_teeth "0"
-r_flex "0"
-r_drawdetailprops "0"
-r_propsmaxdist "1"
-r_drawmodeldecals "0"
-r_maxmodeldecal "0"
 r_drawscreenspaceparticles "0"
 r_waterdrawrefraction "0"
-r_ambientmin "0"
-r_lightaverage "0"
-r_flashlightdepthtexture "0"
-r_glint_procedural "1"							//(0)Use the default eye glinting method. (1) Use CPU eye glinting, for fast CPUs and slow GPUs
 r_norefresh "1"								//Do not store a useless and unused frame time variable
-r_queued_post_processing "1"						//Offloads post processing to the material system.
-r_drawflecks "0"
 r_particle_sim_spike_threshold_ms "0"
-r_PhysPropStaticLighting "1"						//Use premade lighting for props
-r_overlayfadeenable "0"
-r_fullscreen "1"
-r_dopixelvisibility "0"
 r_ropetranslucent "0"							//Skip simulating ropes
-r_flashlightscissor "1"
-r_entityclips "1"							//(0)Skip clipping entities, saves CPU time, (1) Clip entities when the CPU cost is worth saving GPU work
 r_visambient "0"
-r_hunkalloclightmaps "0"						//If a lightmap cannot be fit into the hunk, use dynamic memory
 r_DrawDisp "0"
 r_drawparticles "0"
 r_drawsprites "0"
@@ -331,7 +252,6 @@ cl_decal_alwayswhite "1"
 cl_idealpitchscale "0"
 cl_minimal_rtt_shadows "1"
 cl_particle_snoozetime "0.166667"
-cl_phys_maxticks "2"
 cl_phys_props_enable "0"						//Disable client side physics props
 stream_cache_high_priority_static_models "1"
 stream_cache_preload_from_rpak "1"
@@ -370,8 +290,8 @@ g_ragdoll_lvfadespeed "10000"						//The rate of ragdoll fading in low violence
 hudchat_new_message_fade_duration "1"
 host_threaded_sound "0"
 host_sleep "0"
-mp_usehwmmodels "//1"							//Do not use or load high quality characters
-mp_usehwmvcds "//1"							//Do not use or load high quality character facial expressions
+mp_usehwmmodels "-1"							//Do not use or load high quality characters
+mp_usehwmvcds "-1"							//Do not use or load high quality character facial expressions
 intro_viewed "1" 
 lightmap_realtimelight "0"
 lightmap_realtimeshadows "0"
