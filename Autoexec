@@ -1,4 +1,4 @@
-//Last updated May 30th, 2019 -- Removed commands that didn't work, change around a couple commands that affected gameplay.
+//Last updated June 11th, 2019 -- Removed commands that didn't work, change around a couple commands that affected gameplay.
 
 //To find out when the Autoexec updates, please follow me on Twitter: Twitter.com/Gevorian
 
@@ -10,32 +10,9 @@
 mat_letterbox_aspect_goal 0
 mat_letterbox_aspect_threshold 0
 
-//Muzzle Flash Removal
-alias "+shoot" "+attack; r_particle_timescale 300" //muzzle flash ~set value to 3 if you want bullet tracers.
-alias "-shoot" "-attack; r_particle_timescale 1"
-bind_US_standard "mouse1" "+shoot" //muzzle flash
-
-//+speed ADS zoom fix - gives ability to change zoom in variable scopes while using +speed
-alias "+speedfix" "+zoom; -speed"
-alias "-speedfix" "-zoom; +speed"
-bind_US_standard "mouse2" "+speedfix"
-
-//Custom FOV
-//cl_fovScale "1.7" //fov
-//1.00 is 70
-//1.27 is 90
-//1.55 is 110
-//1.70 is 120
-
-//BHOP BINDS
-bind MWHEELDOWN "+jump"
-bind MWHEELUP "+jump"
-
 //Preference commands
 mat_fullbright "1"				//Brighter materials/textures, very good to use.
 //fps_max 0
-//r_dxgi_max_frame_latency 0 			//Max # Pre//prepared frames (Use this if you don't use custom NVIDIA Control Panel settings)
-//showfps_enabled 1 				//shows fps in huge mumbo jumbo
 mat_queue_mode "2" 				//A value of -1 uses the default for your system, a value of 0 uses synchronous single thread, 1 uses queued single threaded mode
 						and value of 2 uses multi-threaded mode.
 //cl_drawmonitors 0 				//disabling banner pics
@@ -44,18 +21,6 @@ hud_setting_minimapRotate 1 			//Rotating Minimap
 hud_setting_pingAlpha "0.400000" 		//ping and banner transparency
 sprint_view_shake_style "1" 			// Less Headbob
 staticProp_max_scaled_dist 1500 		//The distance at which static objects will be rendered on the map //// try 500 if you have low FPS
-n_usekeyboardsampletime 0 			//On / Off keystroke smoothing parameter, reduces keyboard input delay
-
-//Network commands
-//rate 1000000
-//host_limitlocal 1
-//origin_presense_updateRate 10
-//cl_updaterate_mp 100; match_updateRate 100
-//telemetry_client_enable "0"
-//pin_opt_in "0"
-//cl_smoothtime "0.01"
-//net_compresspackets "0"
-//net_compresspackets_minsize 128
 
 //Audio Commands - Most of these are disabled to the recent audio patch, still testing these.
 //miles_occlusion "0"
