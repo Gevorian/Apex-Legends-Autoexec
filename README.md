@@ -1,1 +1,1 @@
-Outdated by over 2 years, will not be updating.
+Latest Update: https://github.com/Gevorian/Apex-Legends/blob/master/autoexec.cfg%202021
